@@ -1,0 +1,4115 @@
+<!DOCTYPE html>
+<!--
+	NOTES:
+	1. All tokens are represented by '$' sign in the template.
+	2. You can write your code only wherever mentioned.
+	3. All occurrences of existing tokens will be replaced by their appropriate values.
+	4. Blank lines will be removed automatically.
+	5. Remove unnecessary comments before creating your template.
+-->
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="authoring-tool" content="Adobe_Animate_CC">
+<title>子集划分</title>
+<!-- write your code here -->
+<style>
+  #animation_container, #_preload_div_ {
+	position:absolute;
+	margin:auto;
+	left:0;right:0;
+	top:0;bottom:0;
+  }
+</style>
+<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+<script>
+(function (cjs, an) {
+var p; // shortcut to reference prototypes
+var lib={};var ss={};var img={};
+lib.ssMetadata = [
+		{name:"子集划分_atlas_1", frames: [[140,648,70,45],[962,104,52,35],[342,628,91,51],[962,141,52,35],[504,472,52,35],[528,632,26,62],[0,648,68,48],[70,648,68,48],[560,456,120,70],[570,612,100,56],[212,648,52,35],[435,632,91,51],[976,452,28,50],[266,648,28,50],[296,648,28,50],[672,664,28,50],[702,664,28,50],[732,664,28,50],[762,664,28,50],[792,664,28,50],[822,664,28,50],[910,192,112,50],[702,104,128,86],[910,244,112,50],[832,104,128,86],[910,296,112,50],[0,140,128,86],[910,348,112,50],[130,140,128,86],[910,400,112,50],[260,140,128,86],[390,472,112,50],[390,156,128,86],[848,456,126,50],[0,492,112,50],[520,156,128,86],[672,612,108,50],[114,492,112,50],[650,192,128,86],[782,612,108,50],[228,492,112,50],[780,192,128,86],[892,612,108,50],[682,508,112,50],[0,228,128,86],[796,508,112,50],[130,228,128,86],[910,508,112,50],[260,228,128,86],[342,524,112,50],[390,244,128,86],[456,528,112,50],[520,244,128,86],[0,544,112,50],[650,280,128,86],[114,544,112,50],[780,280,128,86],[228,544,112,50],[0,316,128,86],[570,560,112,50],[130,316,128,86],[684,560,112,50],[260,316,128,86],[798,560,112,50],[390,332,128,86],[912,560,112,50],[520,332,128,86],[342,576,112,50],[650,368,128,86],[456,580,112,50],[0,0,136,86],[780,368,128,86],[0,596,112,50],[138,0,136,86],[0,404,128,86],[114,596,112,50],[276,0,136,86],[130,404,128,86],[228,596,112,50],[414,0,136,86],[260,404,128,86],[552,0,232,50],[786,0,232,50],[552,52,232,50],[786,52,232,50],[0,88,232,50],[234,88,232,50],[468,104,232,50],[390,420,168,50],[682,456,164,50],[852,664,30,44],[884,664,30,44]]},
+		{name:"子集划分_atlas_2", frames: [[1576,1806,382,50],[0,1598,394,50],[396,1858,382,50],[396,1598,394,50],[0,0,454,45],[456,0,454,45],[396,1910,382,50],[792,1598,394,50],[912,0,454,45],[1368,0,454,45],[396,1962,382,50],[1188,1598,394,50],[0,47,454,45],[456,47,454,45],[780,1858,382,50],[1584,1598,394,50],[912,47,454,45],[1368,47,454,45],[1164,1858,382,50],[0,1650,394,50],[0,94,454,45],[456,94,454,45],[1548,1858,382,50],[396,1650,394,50],[912,94,454,45],[1368,94,454,45],[780,1910,382,50],[792,1650,394,50],[0,141,454,45],[456,141,454,45],[780,1962,382,50],[1188,1650,394,50],[912,141,454,45],[1368,141,454,45],[1164,1910,382,50],[1584,1650,394,50],[0,188,454,45],[456,188,454,45],[1548,1910,382,50],[0,1702,394,50],[912,188,454,45],[1368,188,454,45],[1164,1962,382,50],[396,1702,394,50],[0,235,454,45],[456,235,454,45],[1548,1962,382,50],[792,1702,394,50],[912,235,454,45],[1368,235,454,45],[1188,1702,394,50],[0,282,454,45],[456,282,454,45],[1584,1702,394,50],[912,282,454,45],[1368,282,454,45],[0,1754,394,50],[0,329,454,45],[456,329,454,45],[396,1754,394,50],[912,329,454,45],[1368,329,454,45],[792,1754,394,50],[0,376,454,45],[456,376,454,45],[1188,1754,394,50],[912,376,454,45],[1368,376,454,45],[1584,1754,394,50],[0,423,454,45],[456,423,454,45],[0,1806,394,50],[912,423,454,45],[1368,423,454,45],[0,1858,394,50],[0,470,454,45],[456,470,454,45],[0,1910,394,50],[912,470,454,45],[1368,470,454,45],[0,1962,394,50],[0,517,454,45],[456,517,454,45],[396,1806,394,50],[912,517,454,45],[1368,517,454,45],[792,1806,394,50],[0,564,454,45],[456,564,454,45],[912,564,454,45],[1368,564,454,45],[0,611,454,45],[456,611,454,45],[912,611,454,45],[1368,611,454,45],[0,658,454,45],[456,658,454,45],[912,658,454,45],[1368,658,454,45],[0,705,454,45],[456,705,454,45],[912,705,454,45],[1368,705,454,45],[0,752,454,45],[456,752,454,45],[912,752,454,45],[1368,752,454,45],[0,799,454,45],[456,799,454,45],[912,799,454,45],[1368,799,454,45],[0,846,454,45],[456,846,454,45],[912,846,454,45],[1368,846,454,45],[0,893,454,45],[456,893,454,45],[912,893,454,45],[1368,893,454,45],[0,940,454,45],[456,940,454,45],[912,940,454,45],[1368,940,454,45],[0,987,454,45],[456,987,454,45],[912,987,454,45],[1368,987,454,45],[0,1034,454,45],[456,1034,454,45],[912,1034,454,45],[1368,1034,454,45],[0,1081,454,45],[456,1081,454,45],[912,1081,454,45],[1368,1081,454,45],[0,1128,454,45],[456,1128,454,45],[912,1128,454,45],[1368,1128,454,45],[0,1175,454,45],[456,1175,454,45],[912,1175,454,45],[1368,1175,454,45],[0,1222,454,45],[456,1222,454,45],[912,1222,454,45],[1368,1222,454,45],[0,1269,454,45],[456,1269,454,45],[912,1269,454,45],[1368,1269,454,45],[0,1316,454,45],[456,1316,454,45],[912,1316,454,45],[1368,1316,454,45],[0,1363,454,45],[456,1363,454,45],[912,1363,454,45],[1368,1363,454,45],[0,1410,454,45],[456,1410,454,45],[912,1410,454,45],[1368,1410,454,45],[0,1457,454,45],[456,1457,454,45],[912,1457,454,45],[1368,1457,454,45],[0,1504,454,45],[456,1504,454,45],[912,1504,454,45],[1368,1504,454,45],[0,1551,454,45],[456,1551,454,45],[912,1551,454,45],[1368,1551,454,45],[1188,1806,386,50]]},
+		{name:"子集划分_atlas_3", frames: [[1740,988,288,50],[1900,104,136,86],[1152,104,372,50],[362,416,356,50],[1392,1196,338,50],[1056,936,346,50],[716,676,350,50],[1008,1664,332,50],[340,1456,334,50],[1790,468,236,50],[1870,192,136,86],[1526,104,372,50],[720,416,356,50],[0,1248,338,50],[1404,936,346,50],[1068,676,350,50],[1342,1664,332,50],[676,1456,334,50],[1794,416,236,50],[1870,280,136,86],[0,156,372,50],[1078,416,356,50],[340,1248,338,50],[0,988,346,50],[1420,676,350,50],[1676,1664,332,50],[1012,1456,334,50],[1790,520,236,50],[1670,1820,136,86],[374,156,372,50],[1436,416,356,50],[680,1248,338,50],[348,988,346,50],[0,728,350,50],[0,1716,332,50],[1348,1456,334,50],[1790,572,236,50],[1808,1820,136,86],[748,156,372,50],[0,468,356,50],[1020,1248,338,50],[696,988,346,50],[352,728,350,50],[334,1716,332,50],[1684,1456,334,50],[1790,624,236,50],[668,1872,136,86],[1122,156,372,50],[358,468,356,50],[1360,1248,338,50],[1044,988,346,50],[704,728,350,50],[668,1716,332,50],[0,1508,334,50],[668,1960,136,86],[1496,156,372,50],[716,468,356,50],[1700,1248,338,50],[1392,988,346,50],[1056,728,350,50],[1002,1716,332,50],[336,1508,334,50],[806,1872,136,86],[0,208,372,50],[1074,468,356,50],[0,1300,338,50],[0,1040,346,50],[1408,728,350,50],[1336,1716,332,50],[672,1508,334,50],[806,1960,136,86],[374,208,372,50],[1432,468,356,50],[340,1300,338,50],[348,1040,346,50],[0,780,350,50],[1670,1716,332,50],[1008,1508,334,50],[944,1872,136,86],[748,208,372,50],[0,520,356,50],[680,1300,338,50],[696,1040,346,50],[352,780,350,50],[0,1768,332,50],[1344,1508,334,50],[944,1960,136,86],[1122,208,372,50],[358,520,356,50],[1020,1300,338,50],[1044,1040,346,50],[704,780,350,50],[0,1820,332,50],[1680,1508,334,50],[1082,1872,136,86],[1496,208,372,50],[716,520,356,50],[1360,1300,338,50],[1392,1040,346,50],[1056,780,350,50],[0,1872,332,50],[0,1560,334,50],[1220,1872,136,86],[0,260,372,50],[1074,520,356,50],[1700,1300,338,50],[0,1092,346,50],[1408,780,350,50],[0,1924,332,50],[336,1560,334,50],[1358,1872,136,86],[0,0,382,50],[374,260,372,50],[1432,520,356,50],[0,1352,338,50],[348,1092,346,50],[0,832,350,50],[0,1976,332,50],[672,1560,334,50],[1496,1872,136,86],[384,0,382,50],[748,260,372,50],[0,572,356,50],[340,1352,338,50],[696,1092,346,50],[352,832,350,50],[334,1768,332,50],[1008,1560,334,50],[1634,1908,136,86],[768,0,382,50],[1122,260,372,50],[358,572,356,50],[680,1352,338,50],[1044,1092,346,50],[704,832,350,50],[668,1768,332,50],[1344,1560,334,50],[1496,364,360,50],[1772,1908,136,86],[1152,0,382,50],[1496,260,372,50],[716,572,356,50],[1020,1352,338,50],[1392,1092,346,50],[1056,832,350,50],[1002,1768,332,50],[1680,1560,334,50],[1752,936,252,50],[1910,1908,136,86],[1536,0,382,50],[0,312,372,50],[1074,572,356,50],[1360,1352,338,50],[0,1144,346,50],[1408,832,350,50],[1336,1768,332,50],[0,1612,334,50],[1740,1040,252,50],[1082,1960,136,86],[0,52,382,50],[374,312,372,50],[1432,572,356,50],[1700,1352,338,50],[348,1144,346,50],[0,884,350,50],[1670,1768,332,50],[336,1612,334,50],[1740,1092,252,50],[1220,1960,136,86],[384,52,382,50],[748,312,372,50],[0,624,356,50],[0,1404,338,50],[696,1144,346,50],[352,884,350,50],[334,1820,332,50],[672,1612,334,50],[1740,1144,252,50],[1358,1960,136,86],[768,52,382,50],[1122,312,372,50],[358,624,356,50],[340,1404,338,50],[1044,1144,346,50],[704,884,350,50],[334,1872,332,50],[1008,1612,334,50],[1760,728,252,50],[1496,1960,136,86],[1152,52,382,50],[1496,312,372,50],[716,624,356,50],[680,1404,338,50],[1392,1144,346,50],[1056,884,350,50],[334,1924,332,50],[1344,1612,334,50],[1772,676,252,50],[1536,52,382,50],[0,364,372,50],[1074,624,356,50],[1020,1404,338,50],[0,1196,346,50],[1408,884,350,50],[334,1976,332,50],[1680,1612,334,50],[1760,780,252,50],[0,104,382,50],[374,364,372,50],[1432,624,356,50],[1360,1404,338,50],[348,1196,346,50],[0,936,350,50],[668,1820,332,50],[0,1664,334,50],[1760,832,252,50],[384,104,382,50],[748,364,372,50],[0,676,356,50],[1700,1404,338,50],[696,1196,346,50],[352,936,350,50],[1002,1820,332,50],[336,1664,334,50],[1760,884,252,50],[768,104,382,50],[1122,364,372,50],[358,676,356,50],[0,1456,338,50],[1044,1196,346,50],[704,936,350,50],[1336,1820,332,50],[672,1664,334,50],[1732,1196,298,50],[0,416,360,50]]},
+		{name:"子集划分_atlas_4", frames: [[0,1290,600,50],[1086,172,620,50],[1080,1966,454,45],[1126,1914,454,45],[602,1290,600,50],[1086,224,620,50],[1536,1961,454,45],[1582,1914,454,45],[1204,1290,600,50],[1086,276,620,50],[0,1342,600,50],[1086,328,620,50],[602,1342,600,50],[1086,380,620,50],[1204,1342,600,50],[1086,432,620,50],[0,1394,600,50],[1086,484,620,50],[602,1394,600,50],[0,1082,620,50],[1204,1394,600,50],[622,1082,620,50],[0,1446,600,50],[1244,1082,620,50],[602,1446,600,50],[0,1134,620,50],[1204,1446,600,50],[622,1134,620,50],[0,1498,600,50],[1244,1134,620,50],[602,1498,600,50],[0,1186,620,50],[1204,1498,600,50],[622,1186,620,50],[0,1550,600,50],[1244,1186,620,50],[602,1550,600,50],[1204,1550,600,50],[0,1602,600,50],[602,1602,600,50],[1204,1602,600,50],[0,1654,600,50],[602,1654,600,50],[1204,1654,600,50],[0,1706,600,50],[0,536,995,544],[602,1706,600,50],[997,536,995,544],[0,0,1084,534],[1086,99,536,71],[0,1238,602,50],[0,1862,586,50],[588,1862,586,50],[604,1238,602,50],[1208,1238,602,50],[1086,0,584,97],[1176,1862,584,50],[0,1914,584,50],[1204,1706,592,50],[0,1758,592,50],[594,1758,592,50],[1188,1758,592,50],[0,1810,592,50],[594,1810,592,50],[1188,1810,592,50],[0,1966,538,50],[540,1966,538,50],[586,1914,538,50],[1672,0,290,79]]}
+];
+(lib.AnMovieClip = function(){
+	this.actionFrames = [];
+	this.ignorePause = false;
+	this.gotoAndPlay = function(positionOrLabel){
+		cjs.MovieClip.prototype.gotoAndPlay.call(this,positionOrLabel);
+	}
+	this.play = function(){
+		cjs.MovieClip.prototype.play.call(this);
+	}
+	this.gotoAndStop = function(positionOrLabel){
+		cjs.MovieClip.prototype.gotoAndStop.call(this,positionOrLabel);
+	}
+	this.stop = function(){
+		cjs.MovieClip.prototype.stop.call(this);
+	}
+}).prototype = p = new cjs.MovieClip();
+// symbols:
+(lib.CachedBmp_2569 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2568 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(1);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2567 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(2);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2566 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(3);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2564 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(4);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2562 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(5);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2561 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(6);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2559 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(7);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2560 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(8);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2557 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(9);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2556 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(10);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2565 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(11);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2554 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(12);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2553 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(13);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2552 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(14);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2551 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(15);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2550 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(16);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2549 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(17);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2548 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(18);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2547 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(19);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2546 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(20);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2545 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2544 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2543 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(21);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2542 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(1);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2541 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(1);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2540 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(22);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2539 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(2);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2538 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(3);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2537 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2536 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(2);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2535 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(3);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2534 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(4);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2533 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(5);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2532 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(6);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2531 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(1);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2530 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(7);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2529 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(8);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2527 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(9);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2526 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(4);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2525 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(23);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2524 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(5);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2523 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(10);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2522 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(24);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2521 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(6);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2520 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(7);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2519 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(2);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2518 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(11);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2517 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(12);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2516 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(13);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2515 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(14);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2514 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(15);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2513 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(3);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2512 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(16);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2511 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(17);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2509 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(18);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2508 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(8);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2507 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(25);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2506 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(9);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2505 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(19);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2504 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(26);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2503 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(4);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2502 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(5);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2501 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(6);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2500 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(20);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2499 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(21);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2498 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(22);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2497 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(23);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2496 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(24);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2495 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(7);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2494 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(25);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2493 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(26);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2491 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(27);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2490 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(10);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2489 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(27);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2488 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(11);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2487 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(28);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2486 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(28);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2485 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(8);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2484 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(9);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2483 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(10);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2482 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(29);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2481 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(30);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2480 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(31);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2479 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(32);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2478 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(33);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2477 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(11);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2476 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(34);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2475 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(35);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2473 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(36);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2472 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(12);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2471 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(29);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2470 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(13);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2469 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(37);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2468 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(30);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2467 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(12);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2466 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(13);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2465 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(14);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2464 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(38);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2463 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(39);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2462 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(40);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2461 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(41);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2460 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(42);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2459 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(15);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2458 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(43);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2457 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(44);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2455 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(45);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2454 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(14);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2453 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(31);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2452 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(15);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2451 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(46);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2450 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(32);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2449 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(16);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2448 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(17);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2447 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(18);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2446 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(47);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2445 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(48);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2444 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(49);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2443 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(50);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2442 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(51);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2441 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(19);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2440 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(52);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2439 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(53);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2437 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(33);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2436 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(16);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2435 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(34);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2434 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(17);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2433 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(54);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2432 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(35);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2431 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(20);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2430 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(21);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2429 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(22);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2428 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(55);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2427 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(56);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2426 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(57);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2425 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(58);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2424 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(59);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2423 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(23);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2422 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(60);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2421 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(61);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2419 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(36);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2418 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(18);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2417 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(37);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2416 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(19);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2415 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(62);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2414 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(38);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2413 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(24);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2412 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(25);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2411 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(26);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2410 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(63);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2409 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(64);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2408 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(65);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2407 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(66);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2406 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(67);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2405 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(27);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2404 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(68);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2403 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(69);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2401 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(39);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2400 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(20);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2399 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(40);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2398 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(21);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2397 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(70);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2396 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(41);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2395 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(28);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2394 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(29);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2393 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(30);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2392 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(71);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2391 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(72);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2390 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(73);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2389 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(74);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2388 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(75);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2387 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(31);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2386 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(76);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2385 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(77);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2383 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(42);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2382 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(22);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2381 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(43);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2380 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(23);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2379 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(78);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2378 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(44);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2377 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(32);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2376 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(33);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2375 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(34);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2374 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(79);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2373 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(80);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2372 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(81);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2371 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(82);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2370 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(83);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2369 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(35);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2368 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(84);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2367 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(85);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2365 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(24);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2364 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(45);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2363 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(25);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2362 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(86);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2361 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(46);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2360 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(36);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2359 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(37);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2358 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(38);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2357 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(87);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2356 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(88);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2355 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(89);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2354 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(90);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2353 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(91);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2352 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(39);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2351 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(92);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2350 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(93);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2348 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(26);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2347 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(47);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2346 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(27);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2345 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(94);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2344 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(48);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2343 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(40);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2342 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(41);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2341 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(42);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2340 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(95);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2339 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(96);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2338 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(97);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2337 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(98);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2336 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(99);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2335 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(43);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2334 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(100);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2333 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(101);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2331 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(28);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2330 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(49);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2329 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(29);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2328 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(102);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2327 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(50);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2326 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(44);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2325 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(45);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2324 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(46);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2323 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(103);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2322 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(104);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2321 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(105);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2320 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(106);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2319 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(107);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2318 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(47);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2317 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(108);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2316 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(109);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2314 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(30);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2313 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(51);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2312 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(31);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2311 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(110);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2310 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(52);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2309 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(48);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2308 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(49);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2307 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(111);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2306 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(112);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2305 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(113);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2304 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(114);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2303 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(115);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2302 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(116);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2301 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(50);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2300 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(117);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2299 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(118);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2297 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(32);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2296 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(53);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2295 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(33);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2294 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(119);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2293 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(54);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2292 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(51);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2291 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(52);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2290 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(120);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2289 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(121);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2288 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(122);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2287 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(123);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2286 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(124);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2285 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(125);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2284 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(53);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2283 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(126);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2282 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(127);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2280 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(34);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2279 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(55);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2278 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(35);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2277 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(128);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2276 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(56);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2275 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(54);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2274 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(55);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2273 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(129);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2272 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(130);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2271 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(131);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2270 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(132);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2269 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(133);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2268 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(134);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2267 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(56);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2266 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(135);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2265 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(136);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2263 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(36);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2262 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(57);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2261 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(137);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2260 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(138);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2259 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(58);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2258 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(57);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2257 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(58);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2256 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(139);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2255 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(140);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2254 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(141);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2253 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(142);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2252 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(143);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2251 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(144);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2250 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(59);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2249 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(145);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2248 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(146);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2246 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(37);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2245 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(59);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2244 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(147);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2243 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(148);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2242 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(60);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2241 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(60);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2240 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(61);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2239 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(149);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2238 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(150);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2237 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(151);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2236 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(152);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2235 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(153);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2234 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(154);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2233 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(62);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2232 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(155);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2231 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(156);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2229 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(38);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2228 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(61);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2227 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(157);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2226 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(158);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2225 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(62);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2224 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(63);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2223 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(64);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2222 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(159);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2221 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(160);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2220 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(161);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2219 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(162);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2218 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(163);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2217 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(164);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2216 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(65);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2215 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(165);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2214 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(166);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2212 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(39);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2211 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(63);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2210 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(167);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2209 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(168);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2208 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(64);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2207 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(66);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2206 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(67);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2205 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(169);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2204 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(170);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2203 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(171);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2202 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(172);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2201 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(173);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2200 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(174);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2199 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(68);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2198 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(175);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2197 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(176);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2195 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(40);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2194 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(65);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2193 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(177);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2192 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(178);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2191 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(66);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2190 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(69);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2189 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(70);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2188 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(179);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2187 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(180);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2186 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(181);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2185 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(182);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2184 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(183);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2183 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(184);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2182 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(71);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2181 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(185);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2180 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(186);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2178 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(41);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2177 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(67);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2176 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(187);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2175 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(188);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2174 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(68);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2173 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(72);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2172 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(73);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2171 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(189);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2170 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(190);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2169 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(191);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2168 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(192);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2167 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(193);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2166 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(194);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2165 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(74);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2164 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(195);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2163 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(196);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2161 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(42);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2160 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(69);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2159 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(197);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2158 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(70);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2157 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(71);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2156 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(75);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2155 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(76);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2154 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(198);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2153 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(199);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2152 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(200);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2151 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(201);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2150 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(202);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2149 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(203);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2148 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(77);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2147 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(204);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2146 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(205);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2144 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(43);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2143 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(72);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2142 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(206);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2141 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(73);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2140 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(74);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2139 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(78);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2138 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(79);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2137 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(207);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2136 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(208);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2135 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(209);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2134 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(210);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2133 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(211);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2132 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(212);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2131 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(80);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2130 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(213);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2129 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(214);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2127 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(44);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2126 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(75);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2125 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(215);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2124 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(76);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2123 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(77);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2122 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(81);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2121 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(82);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2120 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(216);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2119 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(217);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2118 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(218);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2117 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(219);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2116 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(220);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2115 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(221);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2114 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(83);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2113 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(222);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2112 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(223);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2528 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(45);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2110 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(46);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2109 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(78);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2108 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(224);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2107 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(79);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2106 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(80);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2105 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(84);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2104 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(85);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2103 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(225);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2102 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(226);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2101 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(227);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2100 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(228);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2099 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(229);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2098 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(230);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2097 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(86);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2096 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(231);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2095 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(232);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2094 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(47);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2093 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(48);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2092 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(49);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2091 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(87);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2090 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(88);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2089 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(89);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2088 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(90);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2087 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(91);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2086 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(92);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2085 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(93);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2084 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(94);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2083 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(95);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2082 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(96);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2081 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(97);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2080 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(98);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2079 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(99);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2078 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(100);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2077 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(101);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2076 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(102);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2075 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(103);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2074 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(104);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2073 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(105);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2072 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(106);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2071 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(107);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2070 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(108);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2069 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(109);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2068 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(110);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2067 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(111);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2066 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(112);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2065 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(113);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2064 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(114);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2063 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(115);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2062 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(116);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2061 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(117);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2060 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(118);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2059 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(119);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2058 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(120);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2057 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(121);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2056 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(122);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2055 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(123);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2054 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(124);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2053 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(125);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2052 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(126);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2051 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(127);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2050 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(128);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2049 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(129);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2048 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(130);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2047 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(131);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2046 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(132);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2045 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(133);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2044 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(134);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2043 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(135);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2042 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(136);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2041 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(137);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2040 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(138);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2039 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(139);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2038 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(140);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2037 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(141);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2036 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(142);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2035 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(143);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2034 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(144);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2033 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(145);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2032 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(146);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2031 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(147);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2030 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(148);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2029 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(149);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2028 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(150);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2027 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(151);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2026 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(152);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2025 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(153);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2024 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(154);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2023 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(155);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2022 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(156);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2021 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(157);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2020 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(158);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2019 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(159);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2018 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(160);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2017 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(161);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2016 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(162);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2015 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(163);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2014 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(164);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2013 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(165);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2012 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(166);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2011 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(167);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2010 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(168);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2009 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(169);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2008 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(170);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2007 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(171);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2006 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(172);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2005 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(173);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2004 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(174);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2003 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(81);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2002 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(82);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2001 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(83);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_2000 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(84);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_1999 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(85);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_1998 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(86);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_1997 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(87);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_1996 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(88);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_1995 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(233);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_1994 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(50);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_1993 = function() {
+	this.initialize(ss["子集划分_atlas_2"]);
+	this.gotoAndStop(175);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_1992 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(51);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_1991 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(52);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_1990 = function() {
+	this.initialize(ss["子集划分_atlas_3"]);
+	this.gotoAndStop(234);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_1989 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(53);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_1988 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(54);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_1987 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(55);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_1986 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(56);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_1985 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(57);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_1984 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(58);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_1983 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(59);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_1982 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(60);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_1981 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(61);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_1980 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(62);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_1979 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(63);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_1978 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(64);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_1977 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(65);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_1976 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(66);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_1975 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(67);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_1974 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(89);
+}).prototype = p = new cjs.Sprite();
+(lib.flash0 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(90);
+}).prototype = p = new cjs.Sprite();
+(lib.flash0png复制 = function() {
+	this.initialize(ss["子集划分_atlas_1"]);
+	this.gotoAndStop(91);
+}).prototype = p = new cjs.Sprite();
+(lib.位图3 = function() {
+	this.initialize(ss["子集划分_atlas_4"]);
+	this.gotoAndStop(68);
+}).prototype = p = new cjs.Sprite();
+(lib.冲突 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// 图层_1
+	this.instance = new lib.CachedBmp_2569();
+	this.instance.setTransform(0,0,0.5,0.5);
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,35,22.5);
+(lib.upspeed = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// 图层_1
+	this.instance = new lib.CachedBmp_2568();
+	this.instance.setTransform(9.05,4.2,0.5,0.5);
+	this.instance_1 = new lib.CachedBmp_2567();
+	this.instance_1.setTransform(0,0,0.5,0.5);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,45.5,25.5);
+(lib.stop = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// 图层_1
+	this.instance = new lib.CachedBmp_2566();
+	this.instance.setTransform(9.05,4.2,0.5,0.5);
+	this.instance_1 = new lib.CachedBmp_2565();
+	this.instance_1.setTransform(0,0,0.5,0.5);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,45.5,25.5);
+(lib.step = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// 图层_1
+	this.instance = new lib.CachedBmp_2564();
+	this.instance.setTransform(9.05,4.2,0.5,0.5);
+	this.instance_1 = new lib.CachedBmp_2565();
+	this.instance_1.setTransform(0,0,0.5,0.5);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,45.5,25.5);
+(lib.rear = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// 图层_1
+	this.instance = new lib.CachedBmp_2562();
+	this.instance.setTransform(-3.7,18.05,0.4508,0.4508);
+	this.instance_1 = new lib.flash0();
+	this.instance_1.setTransform(0,0,0.6557,0.8889);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-3.7,0,43.7,80);
+(lib.play = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// 图层 1
+	this.instance = new lib.CachedBmp_2559();
+	this.instance.setTransform(10,13.8,0.5,0.5);
+	this.instance_1 = new lib.CachedBmp_2560();
+	this.instance_1.setTransform(-2,8,0.5,0.5);
+	this.instance_2 = new lib.CachedBmp_2561();
+	this.instance_2.setTransform(10,13.8,0.5,0.5);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).to({state:[{t:this.instance_1},{t:this.instance_2}]},2).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-2,8,60,35);
+(lib.front = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// 图层_1
+	this.instance = new lib.CachedBmp_2557();
+	this.instance.setTransform(58,17.05,0.5,0.5);
+	this.instance_1 = new lib.flash0png复制();
+	this.instance_1.setTransform(42,0,0.6557,0.8889);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(42,0,66,80);
+(lib.end = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// 图层_1
+	this.instance = new lib.CachedBmp_2556();
+	this.instance.setTransform(9.05,4.2,0.5,0.5);
+	this.instance_1 = new lib.CachedBmp_2565();
+	this.instance_1.setTransform(0,0,0.5,0.5);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,45.5,25.5);
+(lib._9 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// 图层_1
+	this.instance = new lib.CachedBmp_2554();
+	this.instance.setTransform(0,0,0.5,0.5);
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,14,25);
+(lib._8 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// 图层_1
+	this.instance = new lib.CachedBmp_2553();
+	this.instance.setTransform(0,0,0.5,0.5);
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,14,25);
+(lib._7 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// 图层_1
+	this.instance = new lib.CachedBmp_2552();
+	this.instance.setTransform(0,0,0.4982,0.4982);
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,14,24.9);
+(lib._6 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// 图层_1
+	this.instance = new lib.CachedBmp_2551();
+	this.instance.setTransform(0,0,0.4982,0.4982);
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,14,24.9);
+(lib._5 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// 图层_1
+	this.instance = new lib.CachedBmp_2550();
+	this.instance.setTransform(0,0,0.4982,0.4982);
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,14,24.9);
+(lib._4 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// 图层_1
+	this.instance = new lib.CachedBmp_2549();
+	this.instance.setTransform(0,0,0.5,0.5);
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,14,25);
+(lib._3 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// 图层_1
+	this.instance = new lib.CachedBmp_2548();
+	this.instance.setTransform(0,0,0.5,0.5);
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,14,25);
+(lib._2 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// 图层_1
+	this.instance = new lib.CachedBmp_2547();
+	this.instance.setTransform(0,0,0.4982,0.4982);
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,14,24.9);
+(lib._1 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// 图层_1
+	this.instance = new lib.CachedBmp_2546();
+	this.instance.setTransform(0,0,0.5,0.5);
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,14,25);
+// stage content:
+(lib.子集划分 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	this.actionFrames = [0];
+	// timeline functions:
+	this.frame_0 = function() {
+		"use strict";
+		var _this = this;
+		var baseFramerate = 12; // 基础帧率
+		var stepFrames = [0,1,77,142,206,266,316,364,413,474,523,587,641,690,750,804,860,910,975,1022,1095,1103];
+		var lastFrame = 1103;
+		// 状态管理
+		var animation = {
+		    state: "stopped", // stopped/playing/paused/stepping
+		    isDoubleSpeed: false, // 使用布尔值更清晰地表示是否倍速
+		    targetStepFrame: null
+		};
+		// 初始化控制
+		function initControls() {
+		    // 更新帧率函数
+		    function updateFrameRate() {
+		        createjs.Ticker.framerate = baseFramerate * (animation.isDoubleSpeed ? 1.5 : 1);
+		    }
+		    // 停止并重置
+		    function stopAnimation() {
+		        _this.stop();
+		        animation.state = "stopped";
+		        animation.targetStepFrame = null;
+		        _this.gotoAndStop(0);
+		    }
+		    // 播放按钮
+		    _this.bofang.addEventListener("click", function() {
+		        if (animation.state === "playing") return;
+		        animation.state = "playing";
+		        animation.targetStepFrame = null;
+		        updateFrameRate(); // 应用当前速度设置
+		        _this.play();
+		    });
+		    // 暂停按钮
+		    _this.zanting.addEventListener("click", function() {
+		        if (animation.state === "playing" || animation.state === "stepping") {
+		            _this.stop();
+		            animation.state = "paused";
+		        }
+		    });
+		    // 平滑步进
+		    _this.bujin.addEventListener("click", function() {
+		        if (animation.state === "stepping") return;
+		        var currentFrame = _this.currentFrame;
+		        var nextFrame = stepFrames.find(f => f > currentFrame) || stepFrames[0];
+		        animation.state = "stepping";
+		        animation.targetStepFrame = nextFrame;
+		        updateFrameRate(); // 步进时也应用倍速
+		        _this.play();
+		    });
+		    // 倍速按钮 - 改进版
+		    _this.beisu.addEventListener("click", function() {
+		        // 切换速度状态
+		        animation.isDoubleSpeed = !animation.isDoubleSpeed;
+		        // 如果当前正在播放或步进，立即应用新速度
+		        if (animation.state === "playing" || animation.state === "stepping") {
+		            updateFrameRate();
+		            // 强制刷新播放以确保速度立即生效
+		            _this.play();
+		        }
+		    });
+		    // 结束按钮
+		    _this.jieshu.addEventListener("click", stopAnimation);
+		    // 帧事件处理
+		    _this.addEventListener("tick", function() {
+		        // 步进模式检测
+		        if (animation.state === "stepping" && animation.targetStepFrame !== null) {
+		            if (_this.currentFrame >= animation.targetStepFrame) {
+		                _this.gotoAndStop(animation.targetStepFrame);
+		                _this.stop();
+		                animation.state = "paused";
+		                animation.targetStepFrame = null;
+		            }
+		        }
+		        // 播放结束检测
+		        else if (animation.state === "playing" && _this.currentFrame >= lastFrame) {
+		            _this.gotoAndStop(lastFrame);
+		            animation.state = "stopped";
+		        }
+		    });
+		    // 初始化
+		    stopAnimation();
+		    updateFrameRate(); // 设置初始帧率
+		}
+		initControls();
+	}
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1104));
+	// _
+	this.instance = new lib._9("synched",0);
+	this.instance.setTransform(397,97.8,1,1,0,0,0,7,12.6);
+	this.instance._off = true;
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({_off:false},0).wait(482).to({startPosition:0},0).to({x:524.9,y:148.55},11).wait(18).to({startPosition:0},0).to({x:257.5,y:97.8},11).wait(238).to({startPosition:0},0).to({x:524.9,y:153.7},11).wait(19).to({startPosition:0},0).to({x:363.5,y:97.8},13).wait(114).to({startPosition:0},0).to({x:524.9,y:148.55},12).wait(29).to({startPosition:0},0).to({x:117.6,y:97.8},13).wait(72).to({startPosition:0},0).to({x:524.9,y:148.55},12).to({x:425.9,y:348.65},13).wait(35));
+	// _
+	this.instance_1 = new lib._8("synched",0);
+	this.instance_1.setTransform(362.95,97.8,1,1,0,0,0,7,12.6);
+	this.instance_1._off = true;
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1).to({_off:false},0).wait(421).to({startPosition:0},0).to({x:498.1,y:148.5},11).to({x:400.85,y:323.55},11).wait(660));
+	// _
+	this.instance_2 = new lib._7("synched",0);
+	this.instance_2.setTransform(327.9,97.8,1,1,0,0,0,7,12.6);
+	this.instance_2._off = true;
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1).to({_off:false},0).wait(372).to({startPosition:0},0).to({x:473.9,y:148.5},11).wait(18).to({startPosition:0},0).to({regY:12.5,scaleX:1.0035,scaleY:0.998,x:222.6,y:97.7},11).wait(286).to({startPosition:0},0).to({x:473.6,y:153.6},12).to({x:479.9,y:323.5},12).wait(381));
+	// _
+	this.instance_3 = new lib._6("synched",0);
+	this.instance_3.setTransform(292.95,97.8,1,1,0,0,0,7,12.6);
+	this.instance_3._off = true;
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(1).to({_off:false},0).wait(323).to({startPosition:0},0).to({x:444,y:148.5},11).wait(18).to({startPosition:0},0).to({regY:12.5,scaleX:1.0035,scaleY:0.998,x:187.6,y:97.7},11).wait(285).to({startPosition:0},0).to({x:449.95,y:148.45},11).wait(19).to({startPosition:0},0).to({x:327.5,y:97.7},11).wait(181).to({startPosition:0},0).to({x:449.95,y:148.45},11).wait(17).to({startPosition:0},0).to({x:398,y:97.7},10).wait(79).to({startPosition:0},0).to({x:407.9,y:348.6},12).wait(104));
+	// _
+	this.instance_4 = new lib._5("synched",0);
+	this.instance_4.setTransform(258,97.8,1,1,0,0,0,7,12.6);
+	this.instance_4._off = true;
+	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(1).to({_off:false},0).wait(274).to({startPosition:0},0).to({x:422,y:148.5},11).wait(19).to({startPosition:0},0).to({regY:12.5,scaleX:1.0035,scaleY:0.998,x:152.6,y:97.7},11).wait(285).to({startPosition:0},0).to({x:419.85,y:148.45},10).wait(19).to({startPosition:0},0).to({x:293,y:97.7},10).wait(180).to({startPosition:0},0).to({x:346.95,y:348.6},14).wait(270));
+	// _
+	this.instance_5 = new lib._4("synched",0);
+	this.instance_5.setTransform(223.2,97.8,1,1,0,0,0,7,12.6);
+	this.instance_5._off = true;
+	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(1).to({_off:false},0).wait(214).to({startPosition:0},0).to({x:397.05,y:148.5},11).to({x:382.95,y:323.8},11).wait(867));
+	// _
+	this.instance_6 = new lib._3("synched",0);
+	this.instance_6.setTransform(188.95,97.8,1,1,0,0,0,7,12.6);
+	this.instance_6._off = true;
+	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(1).to({_off:false},0).wait(150).to({startPosition:0},0).to({x:372.95,y:148.5},12).to({x:364.95,y:323.8},12).wait(929));
+	// _
+	this.instance_7 = new lib._2("synched",0);
+	this.instance_7.setTransform(153.95,97.8,1,1,0,0,0,7,12.6);
+	this.instance_7._off = true;
+	this.timeline.addTween(cjs.Tween.get(this.instance_7).wait(1).to({_off:false},0).wait(88).to({startPosition:0},0).to({x:348.9,y:148.5},12).wait(30).to({startPosition:0},0).to({regY:12.5,scaleX:1.0035,scaleY:0.998,x:117.1,y:97.7},11).wait(409).to({startPosition:0},0).to({x:464.05,y:323.7},12).wait(541));
+	// _
+	this.instance_8 = new lib._1("synched",0);
+	this.instance_8.setTransform(118,97.8,1,1,0,0,0,7,12.6);
+	this.instance_8._off = true;
+	this.timeline.addTween(cjs.Tween.get(this.instance_8).wait(1).to({_off:false},0).wait(29).to({startPosition:0},0).to({x:346.9,y:323.55},15).wait(1059));
+	// front
+	this.instance_9 = new lib.front("synched",0);
+	this.instance_9.setTransform(386.45,123.3,1,1,0,0,0,33.5,22.4);
+	this.instance_9._off = true;
+	this.timeline.addTween(cjs.Tween.get(this.instance_9).wait(1).to({_off:false},0).wait(9).to({x:385.45},0).to({x:451.45,alpha:0},9).wait(1).to({x:31.45},0).to({x:91.45,alpha:1},10).wait(51).to({startPosition:0},0).to({x:141.45},8).wait(54).to({startPosition:0},0).to({x:171.45},8).wait(56).to({startPosition:0},0).to({x:209.45},8).wait(52).to({startPosition:0},0).to({x:246.45},8).wait(41).to({startPosition:0},0).to({x:276.45},8).wait(41).to({startPosition:0},0).to({x:316.45},8).wait(41).to({startPosition:0},0).to({x:346.45},8).wait(53).to({startPosition:0},0).to({x:386.45},8).wait(50).to({startPosition:0},0).to({x:466.45,alpha:0},9).wait(1).to({x:6.45},0).to({x:96.45,alpha:1},8).wait(42).to({startPosition:0},0).to({x:136.45},8).wait(40).to({startPosition:0},0).to({x:166.45},8).wait(42).to({startPosition:0},0).to({x:206.45},8).wait(54).to({startPosition:0},0).to({x:236.45},8).wait(51).to({startPosition:0},0).to({x:276.45},8).wait(43).to({startPosition:0},0).to({x:306.45},8).wait(39).to({startPosition:0},0).to({x:336.45},8).wait(62).to({startPosition:0},0).to({x:386.45},8).wait(40).to({startPosition:0},0).to({x:456.45,alpha:0},8).wait(1).to({x:10.5},0).to({x:103.5,alpha:1},7).wait(60));
+	// rear
+	this.instance_10 = new lib.rear("synched",0);
+	this.instance_10.setTransform(398.6,123.3,1.1091,1,0,0,0,14.9,22.9);
+	this.instance_10._off = true;
+	this.timeline.addTween(cjs.Tween.get(this.instance_10).wait(1).to({_off:false},0).wait(110).to({scaleX:1,x:397},0).to({x:497,alpha:0},10).wait(1).to({x:27},0).to({x:117,alpha:1},9).wait(165).to({startPosition:0},0).to({x:152},9).wait(40).to({startPosition:0},0).to({x:186},8).wait(41).to({startPosition:0},0).to({x:221},8).wait(102).to({startPosition:0},0).to({x:261},8).wait(109).to({startPosition:0},0).to({x:301},9).wait(41).to({startPosition:0},0).to({x:331},8).wait(103).to({startPosition:0},0).to({x:371},9).wait(101).to({startPosition:0},0).to({x:411},7).wait(41).to({startPosition:0},0).to({x:491,alpha:0},9).wait(1).to({x:45.05},0).to({x:115.05,alpha:1},9).wait(145));
+	// 图层_2
+	this.instance_11 = new lib.CachedBmp_1974();
+	this.instance_11.setTransform(56,144.05,0.5,0.5);
+	this.instance_11._off = true;
+	this.timeline.addTween(cjs.Tween.get(this.instance_11).wait(1).to({_off:false},0).wait(1103));
+	// 文字说明
+	this.instance_12 = new lib.CachedBmp_1975();
+	this.instance_12.setTransform(265.95,278.05,0.5,0.5);
+	this.instance_13 = new lib.CachedBmp_1976();
+	this.instance_13.setTransform(265.95,278.05,0.5,0.5);
+	this.instance_14 = new lib.CachedBmp_1977();
+	this.instance_14.setTransform(265.95,278.05,0.5,0.5);
+	this.instance_15 = new lib.CachedBmp_1978();
+	this.instance_15.setTransform(246.95,278.05,0.5,0.5);
+	this.instance_16 = new lib.CachedBmp_1979();
+	this.instance_16.setTransform(246.95,278.05,0.5,0.5);
+	this.instance_17 = new lib.CachedBmp_1980();
+	this.instance_17.setTransform(246.95,278.05,0.5,0.5);
+	this.instance_18 = new lib.CachedBmp_1981();
+	this.instance_18.setTransform(246.95,278.05,0.5,0.5);
+	this.instance_19 = new lib.CachedBmp_1982();
+	this.instance_19.setTransform(246.95,278.05,0.5,0.5);
+	this.instance_20 = new lib.CachedBmp_1983();
+	this.instance_20.setTransform(246.95,278.05,0.5,0.5);
+	this.instance_21 = new lib.CachedBmp_1984();
+	this.instance_21.setTransform(246.95,278.05,0.5,0.5);
+	this.instance_22 = new lib.CachedBmp_1985();
+	this.instance_22.setTransform(254.95,274.05,0.5,0.5);
+	this.instance_23 = new lib.CachedBmp_1986();
+	this.instance_23.setTransform(254.95,274.05,0.5,0.5);
+	this.instance_24 = new lib.CachedBmp_1987();
+	this.instance_24.setTransform(254.95,274.05,0.5,0.5);
+	this.instance_25 = new lib.CachedBmp_1988();
+	this.instance_25.setTransform(248.95,275.05,0.5,0.5);
+	this.instance_26 = new lib.CachedBmp_1989();
+	this.instance_26.setTransform(248.95,275.05,0.5,0.5);
+	this.instance_27 = new lib.CachedBmp_1990();
+	this.instance_27.setTransform(300.1,275.1,0.5,0.5);
+	this.instance_28 = new lib.CachedBmp_1991();
+	this.instance_28.setTransform(251.1,278.1,0.5,0.5);
+	this.instance_29 = new lib.CachedBmp_1992();
+	this.instance_29.setTransform(251.1,278.1,0.5,0.5);
+	this.instance_30 = new lib.CachedBmp_1993();
+	this.instance_30.setTransform(293.95,277.05,0.5,0.5);
+	this.instance_31 = new lib.CachedBmp_1994();
+	this.instance_31.setTransform(246.95,279.05,0.5,0.5);
+	this.instance_32 = new lib.CachedBmp_1995();
+	this.instance_32.setTransform(343.95,279.05,0.5,0.5);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_12}]},1).to({state:[{t:this.instance_13}]},9).to({state:[{t:this.instance_14}]},70).to({state:[{t:this.instance_15}]},63).to({state:[{t:this.instance_16}]},64).to({state:[{t:this.instance_17}]},60).to({state:[{t:this.instance_18}]},49).to({state:[{t:this.instance_19}]},49).to({state:[{t:this.instance_20}]},49).to({state:[{t:this.instance_21}]},61).to({state:[]},48).to({state:[{t:this.instance_22}]},10).to({state:[{t:this.instance_23}]},60).to({state:[{t:this.instance_24}]},48).to({state:[{t:this.instance_25}]},50).to({state:[{t:this.instance_26}]},62).to({state:[]},51).to({state:[{t:this.instance_27}]},8).to({state:[{t:this.instance_28}]},51).to({state:[{t:this.instance_29}]},47).to({state:[]},62).to({state:[{t:this.instance_30}]},8).to({state:[{t:this.instance_31}]},48).to({state:[{t:this.instance_32}]},70).wait(6));
+	// 轮
+	this.instance_33 = new lib.CachedBmp_1996();
+	this.instance_33.setTransform(426.95,85.05,0.5,0.5);
+	this.instance_34 = new lib.CachedBmp_1997();
+	this.instance_34.setTransform(426.95,85.05,0.5,0.5);
+	this.instance_35 = new lib.CachedBmp_1998();
+	this.instance_35.setTransform(426.95,85.05,0.5,0.5);
+	this.instance_36 = new lib.CachedBmp_1999();
+	this.instance_36.setTransform(426.95,85.05,0.5,0.5);
+	this.instance_37 = new lib.CachedBmp_2000();
+	this.instance_37.setTransform(426.95,85.05,0.5,0.5);
+	this.instance_38 = new lib.CachedBmp_2001();
+	this.instance_38.setTransform(426.95,85.05,0.5,0.5);
+	this.instance_39 = new lib.CachedBmp_2002();
+	this.instance_39.setTransform(426.95,85.05,0.5,0.5);
+	this.instance_40 = new lib.CachedBmp_2003();
+	this.instance_40.setTransform(426.95,85.05,0.5,0.5);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_33}]},1).to({state:[{t:this.instance_34}]},522).to({state:[{t:this.instance_35}]},10).to({state:[{t:this.instance_36}]},271).to({state:[{t:this.instance_37}]},8).to({state:[{t:this.instance_38}]},160).to({state:[{t:this.instance_39}]},8).to({state:[{t:this.instance_40}]},123).wait(1));
+	// 图层_14
+	this.instance_41 = new lib.CachedBmp_2005();
+	this.instance_41.setTransform(318,244.4,0.5,0.5);
+	this.instance_42 = new lib.CachedBmp_2004();
+	this.instance_42.setTransform(318,182.8,0.5,0.5);
+	this.instance_43 = new lib.CachedBmp_2007();
+	this.instance_43.setTransform(318,244.4,0.5,0.5);
+	this.instance_44 = new lib.CachedBmp_2006();
+	this.instance_44.setTransform(318,182.8,0.5,0.5);
+	this.instance_45 = new lib.CachedBmp_2009();
+	this.instance_45.setTransform(318,244.4,0.5,0.5);
+	this.instance_46 = new lib.CachedBmp_2008();
+	this.instance_46.setTransform(318,182.8,0.5,0.5);
+	this.instance_47 = new lib.冲突("synched",0);
+	this.instance_47.setTransform(379.45,149.4,1,1,0,0,0,17.5,11.2);
+	this.instance_48 = new lib.CachedBmp_2011();
+	this.instance_48.setTransform(318,244.4,0.5,0.5);
+	this.instance_49 = new lib.CachedBmp_2010();
+	this.instance_49.setTransform(318,182.8,0.5,0.5);
+	this.instance_50 = new lib.CachedBmp_2013();
+	this.instance_50.setTransform(318,244.4,0.5,0.5);
+	this.instance_51 = new lib.CachedBmp_2012();
+	this.instance_51.setTransform(318,182.8,0.5,0.5);
+	this.instance_52 = new lib.CachedBmp_2015();
+	this.instance_52.setTransform(318,244.4,0.5,0.5);
+	this.instance_53 = new lib.CachedBmp_2014();
+	this.instance_53.setTransform(318,182.8,0.5,0.5);
+	this.instance_54 = new lib.CachedBmp_2017();
+	this.instance_54.setTransform(318,244.4,0.5,0.5);
+	this.instance_55 = new lib.CachedBmp_2016();
+	this.instance_55.setTransform(318,182.8,0.5,0.5);
+	this.instance_56 = new lib.CachedBmp_2019();
+	this.instance_56.setTransform(318,244.4,0.5,0.5);
+	this.instance_57 = new lib.CachedBmp_2018();
+	this.instance_57.setTransform(318,182.8,0.5,0.5);
+	this.instance_58 = new lib.CachedBmp_2021();
+	this.instance_58.setTransform(318,244.4,0.5,0.5);
+	this.instance_59 = new lib.CachedBmp_2020();
+	this.instance_59.setTransform(318,182.8,0.5,0.5);
+	this.instance_60 = new lib.CachedBmp_2023();
+	this.instance_60.setTransform(318,244.4,0.5,0.5);
+	this.instance_61 = new lib.CachedBmp_2022();
+	this.instance_61.setTransform(318,182.8,0.5,0.5);
+	this.instance_62 = new lib.CachedBmp_2025();
+	this.instance_62.setTransform(318,244.4,0.5,0.5);
+	this.instance_63 = new lib.CachedBmp_2024();
+	this.instance_63.setTransform(318,182.8,0.5,0.5);
+	this.instance_64 = new lib.CachedBmp_2027();
+	this.instance_64.setTransform(318,244.4,0.5,0.5);
+	this.instance_65 = new lib.CachedBmp_2026();
+	this.instance_65.setTransform(318,182.8,0.5,0.5);
+	this.instance_66 = new lib.CachedBmp_2029();
+	this.instance_66.setTransform(318,244.4,0.5,0.5);
+	this.instance_67 = new lib.CachedBmp_2028();
+	this.instance_67.setTransform(318,182.8,0.5,0.5);
+	this.instance_68 = new lib.CachedBmp_2031();
+	this.instance_68.setTransform(318,244.4,0.5,0.5);
+	this.instance_69 = new lib.CachedBmp_2030();
+	this.instance_69.setTransform(318,182.8,0.5,0.5);
+	this.instance_70 = new lib.CachedBmp_2033();
+	this.instance_70.setTransform(318,244.4,0.5,0.5);
+	this.instance_71 = new lib.CachedBmp_2032();
+	this.instance_71.setTransform(318,182.8,0.5,0.5);
+	this.instance_72 = new lib.CachedBmp_2035();
+	this.instance_72.setTransform(318,244.4,0.5,0.5);
+	this.instance_73 = new lib.CachedBmp_2034();
+	this.instance_73.setTransform(318,182.8,0.5,0.5);
+	this.instance_74 = new lib.CachedBmp_2037();
+	this.instance_74.setTransform(318,244.4,0.5,0.5);
+	this.instance_75 = new lib.CachedBmp_2036();
+	this.instance_75.setTransform(318,182.8,0.5,0.5);
+	this.instance_76 = new lib.CachedBmp_2039();
+	this.instance_76.setTransform(318,244.4,0.5,0.5);
+	this.instance_77 = new lib.CachedBmp_2038();
+	this.instance_77.setTransform(318,182.8,0.5,0.5);
+	this.instance_78 = new lib.CachedBmp_2041();
+	this.instance_78.setTransform(318,244.4,0.5,0.5);
+	this.instance_79 = new lib.CachedBmp_2040();
+	this.instance_79.setTransform(318,182.8,0.5,0.5);
+	this.instance_80 = new lib.CachedBmp_2043();
+	this.instance_80.setTransform(318,244.4,0.5,0.5);
+	this.instance_81 = new lib.CachedBmp_2042();
+	this.instance_81.setTransform(318,182.8,0.5,0.5);
+	this.instance_82 = new lib.CachedBmp_2045();
+	this.instance_82.setTransform(318,244.4,0.5,0.5);
+	this.instance_83 = new lib.CachedBmp_2044();
+	this.instance_83.setTransform(318,182.8,0.5,0.5);
+	this.instance_84 = new lib.CachedBmp_2047();
+	this.instance_84.setTransform(318,244.4,0.5,0.5);
+	this.instance_85 = new lib.CachedBmp_2046();
+	this.instance_85.setTransform(318,182.8,0.5,0.5);
+	this.instance_86 = new lib.CachedBmp_2049();
+	this.instance_86.setTransform(318,244.4,0.5,0.5);
+	this.instance_87 = new lib.CachedBmp_2048();
+	this.instance_87.setTransform(318,182.8,0.5,0.5);
+	this.instance_88 = new lib.CachedBmp_2051();
+	this.instance_88.setTransform(318,244.4,0.5,0.5);
+	this.instance_89 = new lib.CachedBmp_2050();
+	this.instance_89.setTransform(318,182.8,0.5,0.5);
+	this.instance_90 = new lib.CachedBmp_2053();
+	this.instance_90.setTransform(318,244.4,0.5,0.5);
+	this.instance_91 = new lib.CachedBmp_2052();
+	this.instance_91.setTransform(318,182.8,0.5,0.5);
+	this.instance_92 = new lib.CachedBmp_2055();
+	this.instance_92.setTransform(318,244.4,0.5,0.5);
+	this.instance_93 = new lib.CachedBmp_2054();
+	this.instance_93.setTransform(318,182.8,0.5,0.5);
+	this.instance_94 = new lib.CachedBmp_2057();
+	this.instance_94.setTransform(318,244.4,0.5,0.5);
+	this.instance_95 = new lib.CachedBmp_2056();
+	this.instance_95.setTransform(318,182.8,0.5,0.5);
+	this.instance_96 = new lib.CachedBmp_2059();
+	this.instance_96.setTransform(318,244.4,0.5,0.5);
+	this.instance_97 = new lib.CachedBmp_2058();
+	this.instance_97.setTransform(318,182.8,0.5,0.5);
+	this.instance_98 = new lib.CachedBmp_2061();
+	this.instance_98.setTransform(318,244.4,0.5,0.5);
+	this.instance_99 = new lib.CachedBmp_2060();
+	this.instance_99.setTransform(318,182.8,0.5,0.5);
+	this.instance_100 = new lib.CachedBmp_2063();
+	this.instance_100.setTransform(318,244.4,0.5,0.5);
+	this.instance_101 = new lib.CachedBmp_2062();
+	this.instance_101.setTransform(318,182.8,0.5,0.5);
+	this.instance_102 = new lib.CachedBmp_2065();
+	this.instance_102.setTransform(318,244.4,0.5,0.5);
+	this.instance_103 = new lib.CachedBmp_2064();
+	this.instance_103.setTransform(318,182.8,0.5,0.5);
+	this.instance_104 = new lib.CachedBmp_2067();
+	this.instance_104.setTransform(318,244.4,0.5,0.5);
+	this.instance_105 = new lib.CachedBmp_2066();
+	this.instance_105.setTransform(318,182.8,0.5,0.5);
+	this.instance_106 = new lib.CachedBmp_2069();
+	this.instance_106.setTransform(318,244.4,0.5,0.5);
+	this.instance_107 = new lib.CachedBmp_2068();
+	this.instance_107.setTransform(318,182.8,0.5,0.5);
+	this.instance_108 = new lib.CachedBmp_2071();
+	this.instance_108.setTransform(318,244.4,0.5,0.5);
+	this.instance_109 = new lib.CachedBmp_2070();
+	this.instance_109.setTransform(318,182.8,0.5,0.5);
+	this.instance_110 = new lib.CachedBmp_2073();
+	this.instance_110.setTransform(318,244.4,0.5,0.5);
+	this.instance_111 = new lib.CachedBmp_2072();
+	this.instance_111.setTransform(318,182.8,0.5,0.5);
+	this.instance_112 = new lib.CachedBmp_2075();
+	this.instance_112.setTransform(318,244.4,0.5,0.5);
+	this.instance_113 = new lib.CachedBmp_2074();
+	this.instance_113.setTransform(318,182.8,0.5,0.5);
+	this.instance_114 = new lib.CachedBmp_2077();
+	this.instance_114.setTransform(318,244.4,0.5,0.5);
+	this.instance_115 = new lib.CachedBmp_2076();
+	this.instance_115.setTransform(318,182.8,0.5,0.5);
+	this.instance_116 = new lib.CachedBmp_2079();
+	this.instance_116.setTransform(318,244.4,0.5,0.5);
+	this.instance_117 = new lib.CachedBmp_2078();
+	this.instance_117.setTransform(318,182.8,0.5,0.5);
+	this.instance_118 = new lib.CachedBmp_2081();
+	this.instance_118.setTransform(318,244.4,0.5,0.5);
+	this.instance_119 = new lib.CachedBmp_2080();
+	this.instance_119.setTransform(318,182.8,0.5,0.5);
+	this.instance_120 = new lib.CachedBmp_2083();
+	this.instance_120.setTransform(318,244.4,0.5,0.5);
+	this.instance_121 = new lib.CachedBmp_2082();
+	this.instance_121.setTransform(318,182.8,0.5,0.5);
+	this.instance_122 = new lib.CachedBmp_2085();
+	this.instance_122.setTransform(318,244.4,0.5,0.5);
+	this.instance_123 = new lib.CachedBmp_2084();
+	this.instance_123.setTransform(318,182.8,0.5,0.5);
+	this.instance_124 = new lib.CachedBmp_2087();
+	this.instance_124.setTransform(318,244.4,0.5,0.5);
+	this.instance_125 = new lib.CachedBmp_2086();
+	this.instance_125.setTransform(318,182.8,0.5,0.5);
+	this.instance_126 = new lib.CachedBmp_2089();
+	this.instance_126.setTransform(318,244.4,0.5,0.5);
+	this.instance_127 = new lib.CachedBmp_2088();
+	this.instance_127.setTransform(318,182.8,0.5,0.5);
+	this.instance_128 = new lib.CachedBmp_2091();
+	this.instance_128.setTransform(318,244.4,0.5,0.5);
+	this.instance_129 = new lib.CachedBmp_2090();
+	this.instance_129.setTransform(318,182.8,0.5,0.5);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_42},{t:this.instance_41}]},1).to({state:[{t:this.instance_44},{t:this.instance_43}]},56).to({state:[{t:this.instance_46},{t:this.instance_45}]},11).to({state:[{t:this.instance_49},{t:this.instance_48},{t:this.instance_47,p:{x:379.45,y:149.4}}]},33).to({state:[{t:this.instance_51},{t:this.instance_50}]},10).to({state:[{t:this.instance_53},{t:this.instance_52}]},75).to({state:[{t:this.instance_55},{t:this.instance_54}]},11).to({state:[{t:this.instance_57},{t:this.instance_56}]},10).to({state:[{t:this.instance_59},{t:this.instance_58}]},40).to({state:[{t:this.instance_61},{t:this.instance_60}]},10).to({state:[{t:this.instance_63},{t:this.instance_62}]},10).to({state:[{t:this.instance_65},{t:this.instance_64},{t:this.instance_47,p:{x:446.3,y:149}}]},19).to({state:[{t:this.instance_67},{t:this.instance_66}]},10).to({state:[{t:this.instance_69},{t:this.instance_68},{t:this.instance_47,p:{x:470.3,y:150}}]},39).to({state:[{t:this.instance_71},{t:this.instance_70}]},10).to({state:[{t:this.instance_73},{t:this.instance_72},{t:this.instance_47,p:{x:499.3,y:149}}]},39).to({state:[{t:this.instance_75},{t:this.instance_74}]},10).to({state:[{t:this.instance_77},{t:this.instance_76}]},61).to({state:[{t:this.instance_79},{t:this.instance_78}]},10).to({state:[{t:this.instance_81},{t:this.instance_80},{t:this.instance_47,p:{x:501.3,y:151}}]},29).to({state:[{t:this.instance_83},{t:this.instance_82}]},10).to({state:[{t:this.instance_85},{t:this.instance_84}]},19).to({state:[{t:this.instance_87},{t:this.instance_86}]},50).to({state:[{t:this.instance_89},{t:this.instance_88}]},10).to({state:[{t:this.instance_91},{t:this.instance_90},{t:this.instance_47,p:{x:446.3,y:150}}]},28).to({state:[{t:this.instance_93},{t:this.instance_92}]},10).to({state:[{t:this.instance_95},{t:this.instance_94},{t:this.instance_47,p:{x:476.3,y:151}}]},39).to({state:[{t:this.instance_97},{t:this.instance_96}]},11).to({state:[{t:this.instance_99},{t:this.instance_98}]},63).to({state:[{t:this.instance_101},{t:this.instance_100}]},10).to({state:[{t:this.instance_103},{t:this.instance_102},{t:this.instance_47,p:{x:500.3,y:154}}]},28).to({state:[{t:this.instance_105},{t:this.instance_104}]},10).to({state:[{t:this.instance_107},{t:this.instance_106}]},22).to({state:[{t:this.instance_109},{t:this.instance_108}]},40).to({state:[{t:this.instance_111},{t:this.instance_110}]},10).to({state:[{t:this.instance_113},{t:this.instance_112},{t:this.instance_47,p:{x:473.3,y:150}}]},28).to({state:[{t:this.instance_115},{t:this.instance_114}]},10).to({state:[{t:this.instance_117},{t:this.instance_116},{t:this.instance_47,p:{x:501.3,y:151}}]},38).to({state:[{t:this.instance_119},{t:this.instance_118}]},10).to({state:[{t:this.instance_121},{t:this.instance_120}]},32).to({state:[{t:this.instance_123},{t:this.instance_122}]},38).to({state:[{t:this.instance_125},{t:this.instance_124}]},9).to({state:[{t:this.instance_127},{t:this.instance_126}]},60).to({state:[{t:this.instance_129},{t:this.instance_128}]},10).wait(15));
+	// 控制层
+	this.jieshu = new lib.end();
+	this.jieshu.name = "jieshu";
+	this.jieshu.setTransform(278.65,375.2,1,1,0,0,0,22.7,12.8);
+	new cjs.ButtonHelper(this.jieshu, 0, 1, 1);
+	this.beisu = new lib.upspeed();
+	this.beisu.name = "beisu";
+	this.beisu.setTransform(222.65,375.2,1,1,0,0,0,22.7,12.8);
+	new cjs.ButtonHelper(this.beisu, 0, 1, 1);
+	this.bujin = new lib.step();
+	this.bujin.name = "bujin";
+	this.bujin.setTransform(166.65,375.2,1,1,0,0,0,22.7,12.8);
+	new cjs.ButtonHelper(this.bujin, 0, 1, 1);
+	this.zanting = new lib.stop();
+	this.zanting.name = "zanting";
+	this.zanting.setTransform(113,375.2,1,1,0,0,0,22.7,12.8);
+	new cjs.ButtonHelper(this.zanting, 0, 1, 1);
+	this.bofang = new lib.play();
+	this.bofang.name = "bofang";
+	this.bofang.setTransform(37.5,356.5,0.7576,0.7353);
+	new cjs.ButtonHelper(this.bofang, 0, 1, 2);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.bofang},{t:this.zanting},{t:this.bujin},{t:this.beisu},{t:this.jieshu}]}).wait(1104));
+	// 校徽
+	this.instance_130 = new lib.位图3();
+	this.instance_130.setTransform(409,357,0.4138,0.3797);
+	this.timeline.addTween(cjs.Tween.get(this.instance_130).wait(1104));
+	// 图层_3
+	this.instance_131 = new lib.CachedBmp_2092();
+	this.instance_131.setTransform(142.9,2,0.5,0.5);
+	this.timeline.addTween(cjs.Tween.get(this.instance_131).wait(1104));
+	// 图层_1
+	this.instance_132 = new lib.CachedBmp_2093();
+	this.instance_132.setTransform(4,34.6,0.5,0.5);
+	this.instance_133 = new lib.CachedBmp_2110();
+	this.instance_133.setTransform(112,57.05,0.5,0.5);
+	this.instance_134 = new lib.CachedBmp_2109();
+	this.instance_134.setTransform(36,86.05,0.5,0.5);
+	this.instance_135 = new lib.CachedBmp_2108();
+	this.instance_135.setTransform(238.95,311.2,0.5,0.5);
+	this.instance_136 = new lib.CachedBmp_2107();
+	this.instance_136.setTransform(248.95,227.05,0.5,0.5);
+	this.instance_137 = new lib.CachedBmp_2106();
+	this.instance_137.setTransform(248.95,166.2,0.5,0.5);
+	this.instance_138 = new lib.CachedBmp_2105();
+	this.instance_138.setTransform(316,220.55,0.5,0.5);
+	this.instance_139 = new lib.CachedBmp_2104();
+	this.instance_139.setTransform(315.95,161.05,0.5,0.5);
+	this.instance_140 = new lib.CachedBmp_2103();
+	this.instance_140.setTransform(60,330,0.5,0.5);
+	this.instance_141 = new lib.CachedBmp_2102();
+	this.instance_141.setTransform(60,310,0.5,0.5);
+	this.instance_142 = new lib.CachedBmp_2101();
+	this.instance_142.setTransform(60,290,0.5,0.5);
+	this.instance_143 = new lib.CachedBmp_2100();
+	this.instance_143.setTransform(60,270,0.5,0.5);
+	this.instance_144 = new lib.CachedBmp_2099();
+	this.instance_144.setTransform(60,250,0.5,0.5);
+	this.instance_145 = new lib.CachedBmp_2098();
+	this.instance_145.setTransform(60,230,0.5,0.5);
+	this.instance_146 = new lib.CachedBmp_2097();
+	this.instance_146.setTransform(60,210,0.5,0.5);
+	this.instance_147 = new lib.CachedBmp_2096();
+	this.instance_147.setTransform(60,190,0.5,0.5);
+	this.instance_148 = new lib.CachedBmp_2095();
+	this.instance_148.setTransform(60,170,0.5,0.5);
+	this.instance_149 = new lib.CachedBmp_2094();
+	this.instance_149.setTransform(40.05,78.45,0.5,0.5);
+	this.instance_150 = new lib.CachedBmp_2127();
+	this.instance_150.setTransform(112,57.05,0.5,0.5);
+	this.instance_151 = new lib.CachedBmp_2126();
+	this.instance_151.setTransform(36,86.05,0.5,0.5);
+	this.instance_152 = new lib.CachedBmp_2125();
+	this.instance_152.setTransform(238.95,311.2,0.5,0.5);
+	this.instance_153 = new lib.CachedBmp_2124();
+	this.instance_153.setTransform(248.95,227.05,0.5,0.5);
+	this.instance_154 = new lib.CachedBmp_2123();
+	this.instance_154.setTransform(248.95,166.2,0.5,0.5);
+	this.instance_155 = new lib.CachedBmp_2122();
+	this.instance_155.setTransform(316,220.55,0.5,0.5);
+	this.instance_156 = new lib.CachedBmp_2121();
+	this.instance_156.setTransform(315.95,161.05,0.5,0.5);
+	this.instance_157 = new lib.CachedBmp_2120();
+	this.instance_157.setTransform(60,330,0.5,0.5);
+	this.instance_158 = new lib.CachedBmp_2119();
+	this.instance_158.setTransform(60,310,0.5,0.5);
+	this.instance_159 = new lib.CachedBmp_2118();
+	this.instance_159.setTransform(60,290,0.5,0.5);
+	this.instance_160 = new lib.CachedBmp_2117();
+	this.instance_160.setTransform(60,270,0.5,0.5);
+	this.instance_161 = new lib.CachedBmp_2116();
+	this.instance_161.setTransform(60,250,0.5,0.5);
+	this.instance_162 = new lib.CachedBmp_2115();
+	this.instance_162.setTransform(60,230,0.5,0.5);
+	this.instance_163 = new lib.CachedBmp_2114();
+	this.instance_163.setTransform(60,210,0.5,0.5);
+	this.instance_164 = new lib.CachedBmp_2113();
+	this.instance_164.setTransform(60,190,0.5,0.5);
+	this.instance_165 = new lib.CachedBmp_2112();
+	this.instance_165.setTransform(60,170,0.5,0.5);
+	this.instance_166 = new lib.CachedBmp_2528();
+	this.instance_166.setTransform(40.05,78.45,0.5,0.5);
+	this.instance_167 = new lib.CachedBmp_2144();
+	this.instance_167.setTransform(112,57.05,0.5,0.5);
+	this.instance_168 = new lib.CachedBmp_2143();
+	this.instance_168.setTransform(36,86.05,0.5,0.5);
+	this.instance_169 = new lib.CachedBmp_2142();
+	this.instance_169.setTransform(238.95,311.2,0.5,0.5);
+	this.instance_170 = new lib.CachedBmp_2141();
+	this.instance_170.setTransform(248.95,227.05,0.5,0.5);
+	this.instance_171 = new lib.CachedBmp_2140();
+	this.instance_171.setTransform(248.95,166.2,0.5,0.5);
+	this.instance_172 = new lib.CachedBmp_2139();
+	this.instance_172.setTransform(316,220.55,0.5,0.5);
+	this.instance_173 = new lib.CachedBmp_2138();
+	this.instance_173.setTransform(315.95,161.05,0.5,0.5);
+	this.instance_174 = new lib.CachedBmp_2137();
+	this.instance_174.setTransform(60,330,0.5,0.5);
+	this.instance_175 = new lib.CachedBmp_2136();
+	this.instance_175.setTransform(60,310,0.5,0.5);
+	this.instance_176 = new lib.CachedBmp_2135();
+	this.instance_176.setTransform(60,290,0.5,0.5);
+	this.instance_177 = new lib.CachedBmp_2134();
+	this.instance_177.setTransform(60,270,0.5,0.5);
+	this.instance_178 = new lib.CachedBmp_2133();
+	this.instance_178.setTransform(60,250,0.5,0.5);
+	this.instance_179 = new lib.CachedBmp_2132();
+	this.instance_179.setTransform(60,230,0.5,0.5);
+	this.instance_180 = new lib.CachedBmp_2131();
+	this.instance_180.setTransform(60,210,0.5,0.5);
+	this.instance_181 = new lib.CachedBmp_2130();
+	this.instance_181.setTransform(60,190,0.5,0.5);
+	this.instance_182 = new lib.CachedBmp_2129();
+	this.instance_182.setTransform(60,170,0.5,0.5);
+	this.instance_183 = new lib.CachedBmp_2161();
+	this.instance_183.setTransform(112,57.05,0.5,0.5);
+	this.instance_184 = new lib.CachedBmp_2160();
+	this.instance_184.setTransform(36,86.05,0.5,0.5);
+	this.instance_185 = new lib.CachedBmp_2159();
+	this.instance_185.setTransform(238.95,311.2,0.5,0.5);
+	this.instance_186 = new lib.CachedBmp_2158();
+	this.instance_186.setTransform(248.95,227.05,0.5,0.5);
+	this.instance_187 = new lib.CachedBmp_2157();
+	this.instance_187.setTransform(248.95,166.2,0.5,0.5);
+	this.instance_188 = new lib.CachedBmp_2156();
+	this.instance_188.setTransform(316,220.55,0.5,0.5);
+	this.instance_189 = new lib.CachedBmp_2155();
+	this.instance_189.setTransform(315.95,161.05,0.5,0.5);
+	this.instance_190 = new lib.CachedBmp_2154();
+	this.instance_190.setTransform(60,330,0.5,0.5);
+	this.instance_191 = new lib.CachedBmp_2153();
+	this.instance_191.setTransform(60,310,0.5,0.5);
+	this.instance_192 = new lib.CachedBmp_2152();
+	this.instance_192.setTransform(60,290,0.5,0.5);
+	this.instance_193 = new lib.CachedBmp_2151();
+	this.instance_193.setTransform(60,270,0.5,0.5);
+	this.instance_194 = new lib.CachedBmp_2150();
+	this.instance_194.setTransform(60,250,0.5,0.5);
+	this.instance_195 = new lib.CachedBmp_2149();
+	this.instance_195.setTransform(60,230,0.5,0.5);
+	this.instance_196 = new lib.CachedBmp_2148();
+	this.instance_196.setTransform(60,210,0.5,0.5);
+	this.instance_197 = new lib.CachedBmp_2147();
+	this.instance_197.setTransform(60,190,0.5,0.5);
+	this.instance_198 = new lib.CachedBmp_2146();
+	this.instance_198.setTransform(60,170,0.5,0.5);
+	this.instance_199 = new lib.CachedBmp_2178();
+	this.instance_199.setTransform(112,57.05,0.5,0.5);
+	this.instance_200 = new lib.CachedBmp_2177();
+	this.instance_200.setTransform(36,86.05,0.5,0.5);
+	this.instance_201 = new lib.CachedBmp_2176();
+	this.instance_201.setTransform(238.95,311.2,0.5,0.5);
+	this.instance_202 = new lib.CachedBmp_2175();
+	this.instance_202.setTransform(248.95,227.05,0.5,0.5);
+	this.instance_203 = new lib.CachedBmp_2174();
+	this.instance_203.setTransform(248.95,166.2,0.5,0.5);
+	this.instance_204 = new lib.CachedBmp_2173();
+	this.instance_204.setTransform(316,220.55,0.5,0.5);
+	this.instance_205 = new lib.CachedBmp_2172();
+	this.instance_205.setTransform(315.95,161.05,0.5,0.5);
+	this.instance_206 = new lib.CachedBmp_2171();
+	this.instance_206.setTransform(60,330,0.5,0.5);
+	this.instance_207 = new lib.CachedBmp_2170();
+	this.instance_207.setTransform(60,310,0.5,0.5);
+	this.instance_208 = new lib.CachedBmp_2169();
+	this.instance_208.setTransform(60,290,0.5,0.5);
+	this.instance_209 = new lib.CachedBmp_2168();
+	this.instance_209.setTransform(60,270,0.5,0.5);
+	this.instance_210 = new lib.CachedBmp_2167();
+	this.instance_210.setTransform(60,250,0.5,0.5);
+	this.instance_211 = new lib.CachedBmp_2166();
+	this.instance_211.setTransform(60,230,0.5,0.5);
+	this.instance_212 = new lib.CachedBmp_2165();
+	this.instance_212.setTransform(60,210,0.5,0.5);
+	this.instance_213 = new lib.CachedBmp_2164();
+	this.instance_213.setTransform(60,190,0.5,0.5);
+	this.instance_214 = new lib.CachedBmp_2163();
+	this.instance_214.setTransform(60,170,0.5,0.5);
+	this.instance_215 = new lib.CachedBmp_2195();
+	this.instance_215.setTransform(112,57.05,0.5,0.5);
+	this.instance_216 = new lib.CachedBmp_2194();
+	this.instance_216.setTransform(36,86.05,0.5,0.5);
+	this.instance_217 = new lib.CachedBmp_2193();
+	this.instance_217.setTransform(238.95,311.2,0.5,0.5);
+	this.instance_218 = new lib.CachedBmp_2192();
+	this.instance_218.setTransform(248.95,227.05,0.5,0.5);
+	this.instance_219 = new lib.CachedBmp_2191();
+	this.instance_219.setTransform(248.95,166.2,0.5,0.5);
+	this.instance_220 = new lib.CachedBmp_2190();
+	this.instance_220.setTransform(316,220.55,0.5,0.5);
+	this.instance_221 = new lib.CachedBmp_2189();
+	this.instance_221.setTransform(315.95,161.05,0.5,0.5);
+	this.instance_222 = new lib.CachedBmp_2188();
+	this.instance_222.setTransform(60,330,0.5,0.5);
+	this.instance_223 = new lib.CachedBmp_2187();
+	this.instance_223.setTransform(60,310,0.5,0.5);
+	this.instance_224 = new lib.CachedBmp_2186();
+	this.instance_224.setTransform(60,290,0.5,0.5);
+	this.instance_225 = new lib.CachedBmp_2185();
+	this.instance_225.setTransform(60,270,0.5,0.5);
+	this.instance_226 = new lib.CachedBmp_2184();
+	this.instance_226.setTransform(60,250,0.5,0.5);
+	this.instance_227 = new lib.CachedBmp_2183();
+	this.instance_227.setTransform(60,230,0.5,0.5);
+	this.instance_228 = new lib.CachedBmp_2182();
+	this.instance_228.setTransform(60,210,0.5,0.5);
+	this.instance_229 = new lib.CachedBmp_2181();
+	this.instance_229.setTransform(60,190,0.5,0.5);
+	this.instance_230 = new lib.CachedBmp_2180();
+	this.instance_230.setTransform(60,170,0.5,0.5);
+	this.instance_231 = new lib.CachedBmp_2212();
+	this.instance_231.setTransform(112,57.05,0.5,0.5);
+	this.instance_232 = new lib.CachedBmp_2211();
+	this.instance_232.setTransform(36,86.05,0.5,0.5);
+	this.instance_233 = new lib.CachedBmp_2210();
+	this.instance_233.setTransform(238.95,311.2,0.5,0.5);
+	this.instance_234 = new lib.CachedBmp_2209();
+	this.instance_234.setTransform(248.95,227.05,0.5,0.5);
+	this.instance_235 = new lib.CachedBmp_2208();
+	this.instance_235.setTransform(248.95,166.2,0.5,0.5);
+	this.instance_236 = new lib.CachedBmp_2207();
+	this.instance_236.setTransform(316,220.55,0.5,0.5);
+	this.instance_237 = new lib.CachedBmp_2206();
+	this.instance_237.setTransform(315.95,161.05,0.5,0.5);
+	this.instance_238 = new lib.CachedBmp_2205();
+	this.instance_238.setTransform(60,330,0.5,0.5);
+	this.instance_239 = new lib.CachedBmp_2204();
+	this.instance_239.setTransform(60,310,0.5,0.5);
+	this.instance_240 = new lib.CachedBmp_2203();
+	this.instance_240.setTransform(60,290,0.5,0.5);
+	this.instance_241 = new lib.CachedBmp_2202();
+	this.instance_241.setTransform(60,270,0.5,0.5);
+	this.instance_242 = new lib.CachedBmp_2201();
+	this.instance_242.setTransform(60,250,0.5,0.5);
+	this.instance_243 = new lib.CachedBmp_2200();
+	this.instance_243.setTransform(60,230,0.5,0.5);
+	this.instance_244 = new lib.CachedBmp_2199();
+	this.instance_244.setTransform(60,210,0.5,0.5);
+	this.instance_245 = new lib.CachedBmp_2198();
+	this.instance_245.setTransform(60,190,0.5,0.5);
+	this.instance_246 = new lib.CachedBmp_2197();
+	this.instance_246.setTransform(60,170,0.5,0.5);
+	this.instance_247 = new lib.CachedBmp_2229();
+	this.instance_247.setTransform(112,57.05,0.5,0.5);
+	this.instance_248 = new lib.CachedBmp_2228();
+	this.instance_248.setTransform(36,86.05,0.5,0.5);
+	this.instance_249 = new lib.CachedBmp_2227();
+	this.instance_249.setTransform(238.95,311.2,0.5,0.5);
+	this.instance_250 = new lib.CachedBmp_2226();
+	this.instance_250.setTransform(248.95,227.05,0.5,0.5);
+	this.instance_251 = new lib.CachedBmp_2225();
+	this.instance_251.setTransform(248.95,166.2,0.5,0.5);
+	this.instance_252 = new lib.CachedBmp_2224();
+	this.instance_252.setTransform(316,220.55,0.5,0.5);
+	this.instance_253 = new lib.CachedBmp_2223();
+	this.instance_253.setTransform(315.95,161.05,0.5,0.5);
+	this.instance_254 = new lib.CachedBmp_2222();
+	this.instance_254.setTransform(60,330,0.5,0.5);
+	this.instance_255 = new lib.CachedBmp_2221();
+	this.instance_255.setTransform(60,310,0.5,0.5);
+	this.instance_256 = new lib.CachedBmp_2220();
+	this.instance_256.setTransform(60,290,0.5,0.5);
+	this.instance_257 = new lib.CachedBmp_2219();
+	this.instance_257.setTransform(60,270,0.5,0.5);
+	this.instance_258 = new lib.CachedBmp_2218();
+	this.instance_258.setTransform(60,250,0.5,0.5);
+	this.instance_259 = new lib.CachedBmp_2217();
+	this.instance_259.setTransform(60,230,0.5,0.5);
+	this.instance_260 = new lib.CachedBmp_2216();
+	this.instance_260.setTransform(60,210,0.5,0.5);
+	this.instance_261 = new lib.CachedBmp_2215();
+	this.instance_261.setTransform(60,190,0.5,0.5);
+	this.instance_262 = new lib.CachedBmp_2214();
+	this.instance_262.setTransform(60,170,0.5,0.5);
+	this.instance_263 = new lib.CachedBmp_2246();
+	this.instance_263.setTransform(112,57.05,0.5,0.5);
+	this.instance_264 = new lib.CachedBmp_2245();
+	this.instance_264.setTransform(36,86.05,0.5,0.5);
+	this.instance_265 = new lib.CachedBmp_2244();
+	this.instance_265.setTransform(238.95,311.2,0.5,0.5);
+	this.instance_266 = new lib.CachedBmp_2243();
+	this.instance_266.setTransform(248.95,227.05,0.5,0.5);
+	this.instance_267 = new lib.CachedBmp_2242();
+	this.instance_267.setTransform(248.95,166.2,0.5,0.5);
+	this.instance_268 = new lib.CachedBmp_2241();
+	this.instance_268.setTransform(316,220.55,0.5,0.5);
+	this.instance_269 = new lib.CachedBmp_2240();
+	this.instance_269.setTransform(315.95,161.05,0.5,0.5);
+	this.instance_270 = new lib.CachedBmp_2239();
+	this.instance_270.setTransform(60,330,0.5,0.5);
+	this.instance_271 = new lib.CachedBmp_2238();
+	this.instance_271.setTransform(60,310,0.5,0.5);
+	this.instance_272 = new lib.CachedBmp_2237();
+	this.instance_272.setTransform(60,290,0.5,0.5);
+	this.instance_273 = new lib.CachedBmp_2236();
+	this.instance_273.setTransform(60,270,0.5,0.5);
+	this.instance_274 = new lib.CachedBmp_2235();
+	this.instance_274.setTransform(60,250,0.5,0.5);
+	this.instance_275 = new lib.CachedBmp_2234();
+	this.instance_275.setTransform(60,230,0.5,0.5);
+	this.instance_276 = new lib.CachedBmp_2233();
+	this.instance_276.setTransform(60,210,0.5,0.5);
+	this.instance_277 = new lib.CachedBmp_2232();
+	this.instance_277.setTransform(60,190,0.5,0.5);
+	this.instance_278 = new lib.CachedBmp_2231();
+	this.instance_278.setTransform(60,170,0.5,0.5);
+	this.instance_279 = new lib.CachedBmp_2263();
+	this.instance_279.setTransform(112,57.05,0.5,0.5);
+	this.instance_280 = new lib.CachedBmp_2262();
+	this.instance_280.setTransform(36,86.05,0.5,0.5);
+	this.instance_281 = new lib.CachedBmp_2261();
+	this.instance_281.setTransform(238.95,311.2,0.5,0.5);
+	this.instance_282 = new lib.CachedBmp_2260();
+	this.instance_282.setTransform(248.95,227.05,0.5,0.5);
+	this.instance_283 = new lib.CachedBmp_2259();
+	this.instance_283.setTransform(248.95,166.2,0.5,0.5);
+	this.instance_284 = new lib.CachedBmp_2258();
+	this.instance_284.setTransform(316,220.55,0.5,0.5);
+	this.instance_285 = new lib.CachedBmp_2257();
+	this.instance_285.setTransform(315.95,161.05,0.5,0.5);
+	this.instance_286 = new lib.CachedBmp_2256();
+	this.instance_286.setTransform(60,330,0.5,0.5);
+	this.instance_287 = new lib.CachedBmp_2255();
+	this.instance_287.setTransform(60,310,0.5,0.5);
+	this.instance_288 = new lib.CachedBmp_2254();
+	this.instance_288.setTransform(60,290,0.5,0.5);
+	this.instance_289 = new lib.CachedBmp_2253();
+	this.instance_289.setTransform(60,270,0.5,0.5);
+	this.instance_290 = new lib.CachedBmp_2252();
+	this.instance_290.setTransform(60,250,0.5,0.5);
+	this.instance_291 = new lib.CachedBmp_2251();
+	this.instance_291.setTransform(60,230,0.5,0.5);
+	this.instance_292 = new lib.CachedBmp_2250();
+	this.instance_292.setTransform(60,210,0.5,0.5);
+	this.instance_293 = new lib.CachedBmp_2249();
+	this.instance_293.setTransform(60,190,0.5,0.5);
+	this.instance_294 = new lib.CachedBmp_2248();
+	this.instance_294.setTransform(60,170,0.5,0.5);
+	this.instance_295 = new lib.CachedBmp_2280();
+	this.instance_295.setTransform(112,57.05,0.5,0.5);
+	this.instance_296 = new lib.CachedBmp_2279();
+	this.instance_296.setTransform(36,86.05,0.5,0.5);
+	this.instance_297 = new lib.CachedBmp_2278();
+	this.instance_297.setTransform(238.95,311.2,0.5,0.5);
+	this.instance_298 = new lib.CachedBmp_2277();
+	this.instance_298.setTransform(248.95,227.05,0.5,0.5);
+	this.instance_299 = new lib.CachedBmp_2276();
+	this.instance_299.setTransform(248.95,166.2,0.5,0.5);
+	this.instance_300 = new lib.CachedBmp_2275();
+	this.instance_300.setTransform(316,220.55,0.5,0.5);
+	this.instance_301 = new lib.CachedBmp_2274();
+	this.instance_301.setTransform(315.95,161.05,0.5,0.5);
+	this.instance_302 = new lib.CachedBmp_2273();
+	this.instance_302.setTransform(60,330,0.5,0.5);
+	this.instance_303 = new lib.CachedBmp_2272();
+	this.instance_303.setTransform(60,310,0.5,0.5);
+	this.instance_304 = new lib.CachedBmp_2271();
+	this.instance_304.setTransform(60,290,0.5,0.5);
+	this.instance_305 = new lib.CachedBmp_2270();
+	this.instance_305.setTransform(60,270,0.5,0.5);
+	this.instance_306 = new lib.CachedBmp_2269();
+	this.instance_306.setTransform(60,250,0.5,0.5);
+	this.instance_307 = new lib.CachedBmp_2268();
+	this.instance_307.setTransform(60,230,0.5,0.5);
+	this.instance_308 = new lib.CachedBmp_2267();
+	this.instance_308.setTransform(60,210,0.5,0.5);
+	this.instance_309 = new lib.CachedBmp_2266();
+	this.instance_309.setTransform(60,190,0.5,0.5);
+	this.instance_310 = new lib.CachedBmp_2265();
+	this.instance_310.setTransform(60,170,0.5,0.5);
+	this.instance_311 = new lib.CachedBmp_2297();
+	this.instance_311.setTransform(112,57.05,0.5,0.5);
+	this.instance_312 = new lib.CachedBmp_2296();
+	this.instance_312.setTransform(36,86.05,0.5,0.5);
+	this.instance_313 = new lib.CachedBmp_2295();
+	this.instance_313.setTransform(238.95,311.2,0.5,0.5);
+	this.instance_314 = new lib.CachedBmp_2294();
+	this.instance_314.setTransform(248.95,227.05,0.5,0.5);
+	this.instance_315 = new lib.CachedBmp_2293();
+	this.instance_315.setTransform(248.95,166.2,0.5,0.5);
+	this.instance_316 = new lib.CachedBmp_2292();
+	this.instance_316.setTransform(316,220.55,0.5,0.5);
+	this.instance_317 = new lib.CachedBmp_2291();
+	this.instance_317.setTransform(315.95,161.05,0.5,0.5);
+	this.instance_318 = new lib.CachedBmp_2290();
+	this.instance_318.setTransform(60,330,0.5,0.5);
+	this.instance_319 = new lib.CachedBmp_2289();
+	this.instance_319.setTransform(60,310,0.5,0.5);
+	this.instance_320 = new lib.CachedBmp_2288();
+	this.instance_320.setTransform(60,290,0.5,0.5);
+	this.instance_321 = new lib.CachedBmp_2287();
+	this.instance_321.setTransform(60,270,0.5,0.5);
+	this.instance_322 = new lib.CachedBmp_2286();
+	this.instance_322.setTransform(60,250,0.5,0.5);
+	this.instance_323 = new lib.CachedBmp_2285();
+	this.instance_323.setTransform(60,230,0.5,0.5);
+	this.instance_324 = new lib.CachedBmp_2284();
+	this.instance_324.setTransform(60,210,0.5,0.5);
+	this.instance_325 = new lib.CachedBmp_2283();
+	this.instance_325.setTransform(60,190,0.5,0.5);
+	this.instance_326 = new lib.CachedBmp_2282();
+	this.instance_326.setTransform(60,170,0.5,0.5);
+	this.instance_327 = new lib.CachedBmp_2314();
+	this.instance_327.setTransform(112,57.05,0.5,0.5);
+	this.instance_328 = new lib.CachedBmp_2313();
+	this.instance_328.setTransform(36,86.05,0.5,0.5);
+	this.instance_329 = new lib.CachedBmp_2312();
+	this.instance_329.setTransform(238.95,311.2,0.5,0.5);
+	this.instance_330 = new lib.CachedBmp_2311();
+	this.instance_330.setTransform(248.95,227.05,0.5,0.5);
+	this.instance_331 = new lib.CachedBmp_2310();
+	this.instance_331.setTransform(248.95,166.2,0.5,0.5);
+	this.instance_332 = new lib.CachedBmp_2309();
+	this.instance_332.setTransform(316,220.55,0.5,0.5);
+	this.instance_333 = new lib.CachedBmp_2308();
+	this.instance_333.setTransform(315.95,161.05,0.5,0.5);
+	this.instance_334 = new lib.CachedBmp_2307();
+	this.instance_334.setTransform(60,330,0.5,0.5);
+	this.instance_335 = new lib.CachedBmp_2306();
+	this.instance_335.setTransform(60,310,0.5,0.5);
+	this.instance_336 = new lib.CachedBmp_2305();
+	this.instance_336.setTransform(60,290,0.5,0.5);
+	this.instance_337 = new lib.CachedBmp_2304();
+	this.instance_337.setTransform(60,270,0.5,0.5);
+	this.instance_338 = new lib.CachedBmp_2303();
+	this.instance_338.setTransform(60,250,0.5,0.5);
+	this.instance_339 = new lib.CachedBmp_2302();
+	this.instance_339.setTransform(60,230,0.5,0.5);
+	this.instance_340 = new lib.CachedBmp_2301();
+	this.instance_340.setTransform(60,210,0.5,0.5);
+	this.instance_341 = new lib.CachedBmp_2300();
+	this.instance_341.setTransform(60,190,0.5,0.5);
+	this.instance_342 = new lib.CachedBmp_2299();
+	this.instance_342.setTransform(60,170,0.5,0.5);
+	this.instance_343 = new lib.CachedBmp_2331();
+	this.instance_343.setTransform(112,57.05,0.5,0.5);
+	this.instance_344 = new lib.CachedBmp_2330();
+	this.instance_344.setTransform(36,86.05,0.5,0.5);
+	this.instance_345 = new lib.CachedBmp_2329();
+	this.instance_345.setTransform(238.95,311.2,0.5,0.5);
+	this.instance_346 = new lib.CachedBmp_2328();
+	this.instance_346.setTransform(248.95,227.05,0.5,0.5);
+	this.instance_347 = new lib.CachedBmp_2327();
+	this.instance_347.setTransform(248.95,166.2,0.5,0.5);
+	this.instance_348 = new lib.CachedBmp_2326();
+	this.instance_348.setTransform(316,220.55,0.5,0.5);
+	this.instance_349 = new lib.CachedBmp_2325();
+	this.instance_349.setTransform(315.95,161.05,0.5,0.5);
+	this.instance_350 = new lib.CachedBmp_2324();
+	this.instance_350.setTransform(60,330,0.5,0.5);
+	this.instance_351 = new lib.CachedBmp_2323();
+	this.instance_351.setTransform(60,310,0.5,0.5);
+	this.instance_352 = new lib.CachedBmp_2322();
+	this.instance_352.setTransform(60,290,0.5,0.5);
+	this.instance_353 = new lib.CachedBmp_2321();
+	this.instance_353.setTransform(60,270,0.5,0.5);
+	this.instance_354 = new lib.CachedBmp_2320();
+	this.instance_354.setTransform(60,250,0.5,0.5);
+	this.instance_355 = new lib.CachedBmp_2319();
+	this.instance_355.setTransform(60,230,0.5,0.5);
+	this.instance_356 = new lib.CachedBmp_2318();
+	this.instance_356.setTransform(60,210,0.5,0.5);
+	this.instance_357 = new lib.CachedBmp_2317();
+	this.instance_357.setTransform(60,190,0.5,0.5);
+	this.instance_358 = new lib.CachedBmp_2316();
+	this.instance_358.setTransform(60,170,0.5,0.5);
+	this.instance_359 = new lib.CachedBmp_2348();
+	this.instance_359.setTransform(112,57.05,0.5,0.5);
+	this.instance_360 = new lib.CachedBmp_2347();
+	this.instance_360.setTransform(36,86.05,0.5,0.5);
+	this.instance_361 = new lib.CachedBmp_2346();
+	this.instance_361.setTransform(238.95,311.2,0.5,0.5);
+	this.instance_362 = new lib.CachedBmp_2345();
+	this.instance_362.setTransform(248.95,227.05,0.5,0.5);
+	this.instance_363 = new lib.CachedBmp_2344();
+	this.instance_363.setTransform(248.95,166.2,0.5,0.5);
+	this.instance_364 = new lib.CachedBmp_2343();
+	this.instance_364.setTransform(316,220.55,0.5,0.5);
+	this.instance_365 = new lib.CachedBmp_2342();
+	this.instance_365.setTransform(315.95,161.05,0.5,0.5);
+	this.instance_366 = new lib.CachedBmp_2341();
+	this.instance_366.setTransform(60,330,0.5,0.5);
+	this.instance_367 = new lib.CachedBmp_2340();
+	this.instance_367.setTransform(60,310,0.5,0.5);
+	this.instance_368 = new lib.CachedBmp_2339();
+	this.instance_368.setTransform(60,290,0.5,0.5);
+	this.instance_369 = new lib.CachedBmp_2338();
+	this.instance_369.setTransform(60,270,0.5,0.5);
+	this.instance_370 = new lib.CachedBmp_2337();
+	this.instance_370.setTransform(60,250,0.5,0.5);
+	this.instance_371 = new lib.CachedBmp_2336();
+	this.instance_371.setTransform(60,230,0.5,0.5);
+	this.instance_372 = new lib.CachedBmp_2335();
+	this.instance_372.setTransform(60,210,0.5,0.5);
+	this.instance_373 = new lib.CachedBmp_2334();
+	this.instance_373.setTransform(60,190,0.5,0.5);
+	this.instance_374 = new lib.CachedBmp_2333();
+	this.instance_374.setTransform(60,170,0.5,0.5);
+	this.instance_375 = new lib.CachedBmp_2365();
+	this.instance_375.setTransform(112,57.05,0.5,0.5);
+	this.instance_376 = new lib.CachedBmp_2364();
+	this.instance_376.setTransform(36,86.05,0.5,0.5);
+	this.instance_377 = new lib.CachedBmp_2363();
+	this.instance_377.setTransform(238.95,311.2,0.5,0.5);
+	this.instance_378 = new lib.CachedBmp_2362();
+	this.instance_378.setTransform(248.95,227.05,0.5,0.5);
+	this.instance_379 = new lib.CachedBmp_2361();
+	this.instance_379.setTransform(248.95,166.2,0.5,0.5);
+	this.instance_380 = new lib.CachedBmp_2360();
+	this.instance_380.setTransform(316,220.55,0.5,0.5);
+	this.instance_381 = new lib.CachedBmp_2359();
+	this.instance_381.setTransform(315.95,161.05,0.5,0.5);
+	this.instance_382 = new lib.CachedBmp_2358();
+	this.instance_382.setTransform(60,330,0.5,0.5);
+	this.instance_383 = new lib.CachedBmp_2357();
+	this.instance_383.setTransform(60,310,0.5,0.5);
+	this.instance_384 = new lib.CachedBmp_2356();
+	this.instance_384.setTransform(60,290,0.5,0.5);
+	this.instance_385 = new lib.CachedBmp_2355();
+	this.instance_385.setTransform(60,270,0.5,0.5);
+	this.instance_386 = new lib.CachedBmp_2354();
+	this.instance_386.setTransform(60,250,0.5,0.5);
+	this.instance_387 = new lib.CachedBmp_2353();
+	this.instance_387.setTransform(60,230,0.5,0.5);
+	this.instance_388 = new lib.CachedBmp_2352();
+	this.instance_388.setTransform(60,210,0.5,0.5);
+	this.instance_389 = new lib.CachedBmp_2351();
+	this.instance_389.setTransform(60,190,0.5,0.5);
+	this.instance_390 = new lib.CachedBmp_2350();
+	this.instance_390.setTransform(60,170,0.5,0.5);
+	this.instance_391 = new lib.CachedBmp_2383();
+	this.instance_391.setTransform(307.95,335.05,0.5,0.5);
+	this.instance_392 = new lib.CachedBmp_2382();
+	this.instance_392.setTransform(112,57.05,0.5,0.5);
+	this.instance_393 = new lib.CachedBmp_2381();
+	this.instance_393.setTransform(36,86.05,0.5,0.5);
+	this.instance_394 = new lib.CachedBmp_2380();
+	this.instance_394.setTransform(238.95,311.2,0.5,0.5);
+	this.instance_395 = new lib.CachedBmp_2379();
+	this.instance_395.setTransform(248.95,227.05,0.5,0.5);
+	this.instance_396 = new lib.CachedBmp_2378();
+	this.instance_396.setTransform(248.95,166.2,0.5,0.5);
+	this.instance_397 = new lib.CachedBmp_2377();
+	this.instance_397.setTransform(316,220.55,0.5,0.5);
+	this.instance_398 = new lib.CachedBmp_2376();
+	this.instance_398.setTransform(315.95,161.05,0.5,0.5);
+	this.instance_399 = new lib.CachedBmp_2375();
+	this.instance_399.setTransform(60,330,0.5,0.5);
+	this.instance_400 = new lib.CachedBmp_2374();
+	this.instance_400.setTransform(60,310,0.5,0.5);
+	this.instance_401 = new lib.CachedBmp_2373();
+	this.instance_401.setTransform(60,290,0.5,0.5);
+	this.instance_402 = new lib.CachedBmp_2372();
+	this.instance_402.setTransform(60,270,0.5,0.5);
+	this.instance_403 = new lib.CachedBmp_2371();
+	this.instance_403.setTransform(60,250,0.5,0.5);
+	this.instance_404 = new lib.CachedBmp_2370();
+	this.instance_404.setTransform(60,230,0.5,0.5);
+	this.instance_405 = new lib.CachedBmp_2369();
+	this.instance_405.setTransform(60,210,0.5,0.5);
+	this.instance_406 = new lib.CachedBmp_2368();
+	this.instance_406.setTransform(60,190,0.5,0.5);
+	this.instance_407 = new lib.CachedBmp_2367();
+	this.instance_407.setTransform(60,170,0.5,0.5);
+	this.instance_408 = new lib.CachedBmp_2401();
+	this.instance_408.setTransform(307.95,335.05,0.5,0.5);
+	this.instance_409 = new lib.CachedBmp_2400();
+	this.instance_409.setTransform(112,57.05,0.5,0.5);
+	this.instance_410 = new lib.CachedBmp_2399();
+	this.instance_410.setTransform(36,86.05,0.5,0.5);
+	this.instance_411 = new lib.CachedBmp_2398();
+	this.instance_411.setTransform(238.95,311.2,0.5,0.5);
+	this.instance_412 = new lib.CachedBmp_2397();
+	this.instance_412.setTransform(248.95,227.05,0.5,0.5);
+	this.instance_413 = new lib.CachedBmp_2396();
+	this.instance_413.setTransform(248.95,166.2,0.5,0.5);
+	this.instance_414 = new lib.CachedBmp_2395();
+	this.instance_414.setTransform(316,220.55,0.5,0.5);
+	this.instance_415 = new lib.CachedBmp_2394();
+	this.instance_415.setTransform(315.95,161.05,0.5,0.5);
+	this.instance_416 = new lib.CachedBmp_2393();
+	this.instance_416.setTransform(60,330,0.5,0.5);
+	this.instance_417 = new lib.CachedBmp_2392();
+	this.instance_417.setTransform(60,310,0.5,0.5);
+	this.instance_418 = new lib.CachedBmp_2391();
+	this.instance_418.setTransform(60,290,0.5,0.5);
+	this.instance_419 = new lib.CachedBmp_2390();
+	this.instance_419.setTransform(60,270,0.5,0.5);
+	this.instance_420 = new lib.CachedBmp_2389();
+	this.instance_420.setTransform(60,250,0.5,0.5);
+	this.instance_421 = new lib.CachedBmp_2388();
+	this.instance_421.setTransform(60,230,0.5,0.5);
+	this.instance_422 = new lib.CachedBmp_2387();
+	this.instance_422.setTransform(60,210,0.5,0.5);
+	this.instance_423 = new lib.CachedBmp_2386();
+	this.instance_423.setTransform(60,190,0.5,0.5);
+	this.instance_424 = new lib.CachedBmp_2385();
+	this.instance_424.setTransform(60,170,0.5,0.5);
+	this.instance_425 = new lib.CachedBmp_2419();
+	this.instance_425.setTransform(307.95,335.05,0.5,0.5);
+	this.instance_426 = new lib.CachedBmp_2418();
+	this.instance_426.setTransform(112,57.05,0.5,0.5);
+	this.instance_427 = new lib.CachedBmp_2417();
+	this.instance_427.setTransform(36,86.05,0.5,0.5);
+	this.instance_428 = new lib.CachedBmp_2416();
+	this.instance_428.setTransform(238.95,311.2,0.5,0.5);
+	this.instance_429 = new lib.CachedBmp_2415();
+	this.instance_429.setTransform(248.95,227.05,0.5,0.5);
+	this.instance_430 = new lib.CachedBmp_2414();
+	this.instance_430.setTransform(248.95,166.2,0.5,0.5);
+	this.instance_431 = new lib.CachedBmp_2413();
+	this.instance_431.setTransform(316,220.55,0.5,0.5);
+	this.instance_432 = new lib.CachedBmp_2412();
+	this.instance_432.setTransform(315.95,161.05,0.5,0.5);
+	this.instance_433 = new lib.CachedBmp_2411();
+	this.instance_433.setTransform(60,330,0.5,0.5);
+	this.instance_434 = new lib.CachedBmp_2410();
+	this.instance_434.setTransform(60,310,0.5,0.5);
+	this.instance_435 = new lib.CachedBmp_2409();
+	this.instance_435.setTransform(60,290,0.5,0.5);
+	this.instance_436 = new lib.CachedBmp_2408();
+	this.instance_436.setTransform(60,270,0.5,0.5);
+	this.instance_437 = new lib.CachedBmp_2407();
+	this.instance_437.setTransform(60,250,0.5,0.5);
+	this.instance_438 = new lib.CachedBmp_2406();
+	this.instance_438.setTransform(60,230,0.5,0.5);
+	this.instance_439 = new lib.CachedBmp_2405();
+	this.instance_439.setTransform(60,210,0.5,0.5);
+	this.instance_440 = new lib.CachedBmp_2404();
+	this.instance_440.setTransform(60,190,0.5,0.5);
+	this.instance_441 = new lib.CachedBmp_2403();
+	this.instance_441.setTransform(60,170,0.5,0.5);
+	this.instance_442 = new lib.CachedBmp_2437();
+	this.instance_442.setTransform(307.95,335.05,0.5,0.5);
+	this.instance_443 = new lib.CachedBmp_2436();
+	this.instance_443.setTransform(112,57.05,0.5,0.5);
+	this.instance_444 = new lib.CachedBmp_2435();
+	this.instance_444.setTransform(36,86.05,0.5,0.5);
+	this.instance_445 = new lib.CachedBmp_2434();
+	this.instance_445.setTransform(238.95,311.2,0.5,0.5);
+	this.instance_446 = new lib.CachedBmp_2433();
+	this.instance_446.setTransform(248.95,227.05,0.5,0.5);
+	this.instance_447 = new lib.CachedBmp_2432();
+	this.instance_447.setTransform(248.95,166.2,0.5,0.5);
+	this.instance_448 = new lib.CachedBmp_2431();
+	this.instance_448.setTransform(316,220.55,0.5,0.5);
+	this.instance_449 = new lib.CachedBmp_2430();
+	this.instance_449.setTransform(315.95,161.05,0.5,0.5);
+	this.instance_450 = new lib.CachedBmp_2429();
+	this.instance_450.setTransform(60,330,0.5,0.5);
+	this.instance_451 = new lib.CachedBmp_2428();
+	this.instance_451.setTransform(60,310,0.5,0.5);
+	this.instance_452 = new lib.CachedBmp_2427();
+	this.instance_452.setTransform(60,290,0.5,0.5);
+	this.instance_453 = new lib.CachedBmp_2426();
+	this.instance_453.setTransform(60,270,0.5,0.5);
+	this.instance_454 = new lib.CachedBmp_2425();
+	this.instance_454.setTransform(60,250,0.5,0.5);
+	this.instance_455 = new lib.CachedBmp_2424();
+	this.instance_455.setTransform(60,230,0.5,0.5);
+	this.instance_456 = new lib.CachedBmp_2423();
+	this.instance_456.setTransform(60,210,0.5,0.5);
+	this.instance_457 = new lib.CachedBmp_2422();
+	this.instance_457.setTransform(60,190,0.5,0.5);
+	this.instance_458 = new lib.CachedBmp_2421();
+	this.instance_458.setTransform(60,170,0.5,0.5);
+	this.instance_459 = new lib.CachedBmp_2455();
+	this.instance_459.setTransform(307.95,335.05,0.5,0.5);
+	this.instance_460 = new lib.CachedBmp_2454();
+	this.instance_460.setTransform(112,57.05,0.5,0.5);
+	this.instance_461 = new lib.CachedBmp_2453();
+	this.instance_461.setTransform(36,86.05,0.5,0.5);
+	this.instance_462 = new lib.CachedBmp_2452();
+	this.instance_462.setTransform(238.95,311.2,0.5,0.5);
+	this.instance_463 = new lib.CachedBmp_2451();
+	this.instance_463.setTransform(248.95,227.05,0.5,0.5);
+	this.instance_464 = new lib.CachedBmp_2450();
+	this.instance_464.setTransform(248.95,166.2,0.5,0.5);
+	this.instance_465 = new lib.CachedBmp_2449();
+	this.instance_465.setTransform(316,220.55,0.5,0.5);
+	this.instance_466 = new lib.CachedBmp_2448();
+	this.instance_466.setTransform(315.95,161.05,0.5,0.5);
+	this.instance_467 = new lib.CachedBmp_2447();
+	this.instance_467.setTransform(60,330,0.5,0.5);
+	this.instance_468 = new lib.CachedBmp_2446();
+	this.instance_468.setTransform(60,310,0.5,0.5);
+	this.instance_469 = new lib.CachedBmp_2445();
+	this.instance_469.setTransform(60,290,0.5,0.5);
+	this.instance_470 = new lib.CachedBmp_2444();
+	this.instance_470.setTransform(60,270,0.5,0.5);
+	this.instance_471 = new lib.CachedBmp_2443();
+	this.instance_471.setTransform(60,250,0.5,0.5);
+	this.instance_472 = new lib.CachedBmp_2442();
+	this.instance_472.setTransform(60,230,0.5,0.5);
+	this.instance_473 = new lib.CachedBmp_2441();
+	this.instance_473.setTransform(60,210,0.5,0.5);
+	this.instance_474 = new lib.CachedBmp_2440();
+	this.instance_474.setTransform(60,190,0.5,0.5);
+	this.instance_475 = new lib.CachedBmp_2439();
+	this.instance_475.setTransform(60,170,0.5,0.5);
+	this.instance_476 = new lib.CachedBmp_2473();
+	this.instance_476.setTransform(307.95,335.05,0.5,0.5);
+	this.instance_477 = new lib.CachedBmp_2472();
+	this.instance_477.setTransform(112,57.05,0.5,0.5);
+	this.instance_478 = new lib.CachedBmp_2471();
+	this.instance_478.setTransform(36,86.05,0.5,0.5);
+	this.instance_479 = new lib.CachedBmp_2470();
+	this.instance_479.setTransform(238.95,311.2,0.5,0.5);
+	this.instance_480 = new lib.CachedBmp_2469();
+	this.instance_480.setTransform(248.95,227.05,0.5,0.5);
+	this.instance_481 = new lib.CachedBmp_2468();
+	this.instance_481.setTransform(248.95,166.2,0.5,0.5);
+	this.instance_482 = new lib.CachedBmp_2467();
+	this.instance_482.setTransform(316,220.55,0.5,0.5);
+	this.instance_483 = new lib.CachedBmp_2466();
+	this.instance_483.setTransform(315.95,161.05,0.5,0.5);
+	this.instance_484 = new lib.CachedBmp_2465();
+	this.instance_484.setTransform(60,330,0.5,0.5);
+	this.instance_485 = new lib.CachedBmp_2464();
+	this.instance_485.setTransform(60,310,0.5,0.5);
+	this.instance_486 = new lib.CachedBmp_2463();
+	this.instance_486.setTransform(60,290,0.5,0.5);
+	this.instance_487 = new lib.CachedBmp_2462();
+	this.instance_487.setTransform(60,270,0.5,0.5);
+	this.instance_488 = new lib.CachedBmp_2461();
+	this.instance_488.setTransform(60,250,0.5,0.5);
+	this.instance_489 = new lib.CachedBmp_2460();
+	this.instance_489.setTransform(60,230,0.5,0.5);
+	this.instance_490 = new lib.CachedBmp_2459();
+	this.instance_490.setTransform(60,210,0.5,0.5);
+	this.instance_491 = new lib.CachedBmp_2458();
+	this.instance_491.setTransform(60,190,0.5,0.5);
+	this.instance_492 = new lib.CachedBmp_2457();
+	this.instance_492.setTransform(60,170,0.5,0.5);
+	this.instance_493 = new lib.CachedBmp_2491();
+	this.instance_493.setTransform(307.95,335.05,0.5,0.5);
+	this.instance_494 = new lib.CachedBmp_2490();
+	this.instance_494.setTransform(112,57.05,0.5,0.5);
+	this.instance_495 = new lib.CachedBmp_2489();
+	this.instance_495.setTransform(36,86.05,0.5,0.5);
+	this.instance_496 = new lib.CachedBmp_2488();
+	this.instance_496.setTransform(238.95,311.2,0.5,0.5);
+	this.instance_497 = new lib.CachedBmp_2487();
+	this.instance_497.setTransform(248.95,227.05,0.5,0.5);
+	this.instance_498 = new lib.CachedBmp_2486();
+	this.instance_498.setTransform(248.95,166.2,0.5,0.5);
+	this.instance_499 = new lib.CachedBmp_2485();
+	this.instance_499.setTransform(316,220.55,0.5,0.5);
+	this.instance_500 = new lib.CachedBmp_2484();
+	this.instance_500.setTransform(315.95,161.05,0.5,0.5);
+	this.instance_501 = new lib.CachedBmp_2483();
+	this.instance_501.setTransform(60,330,0.5,0.5);
+	this.instance_502 = new lib.CachedBmp_2482();
+	this.instance_502.setTransform(60,310,0.5,0.5);
+	this.instance_503 = new lib.CachedBmp_2481();
+	this.instance_503.setTransform(60,290,0.5,0.5);
+	this.instance_504 = new lib.CachedBmp_2480();
+	this.instance_504.setTransform(60,270,0.5,0.5);
+	this.instance_505 = new lib.CachedBmp_2479();
+	this.instance_505.setTransform(60,250,0.5,0.5);
+	this.instance_506 = new lib.CachedBmp_2478();
+	this.instance_506.setTransform(60,230,0.5,0.5);
+	this.instance_507 = new lib.CachedBmp_2477();
+	this.instance_507.setTransform(60,210,0.5,0.5);
+	this.instance_508 = new lib.CachedBmp_2476();
+	this.instance_508.setTransform(60,190,0.5,0.5);
+	this.instance_509 = new lib.CachedBmp_2475();
+	this.instance_509.setTransform(60,170,0.5,0.5);
+	this.instance_510 = new lib.CachedBmp_2509();
+	this.instance_510.setTransform(307.95,335.05,0.5,0.5);
+	this.instance_511 = new lib.CachedBmp_2508();
+	this.instance_511.setTransform(112,57.05,0.5,0.5);
+	this.instance_512 = new lib.CachedBmp_2507();
+	this.instance_512.setTransform(36,86.05,0.5,0.5);
+	this.instance_513 = new lib.CachedBmp_2506();
+	this.instance_513.setTransform(238.95,311.2,0.5,0.5);
+	this.instance_514 = new lib.CachedBmp_2505();
+	this.instance_514.setTransform(248.95,227.05,0.5,0.5);
+	this.instance_515 = new lib.CachedBmp_2504();
+	this.instance_515.setTransform(248.95,166.2,0.5,0.5);
+	this.instance_516 = new lib.CachedBmp_2503();
+	this.instance_516.setTransform(316,220.55,0.5,0.5);
+	this.instance_517 = new lib.CachedBmp_2502();
+	this.instance_517.setTransform(315.95,161.05,0.5,0.5);
+	this.instance_518 = new lib.CachedBmp_2501();
+	this.instance_518.setTransform(60,330,0.5,0.5);
+	this.instance_519 = new lib.CachedBmp_2500();
+	this.instance_519.setTransform(60,310,0.5,0.5);
+	this.instance_520 = new lib.CachedBmp_2499();
+	this.instance_520.setTransform(60,290,0.5,0.5);
+	this.instance_521 = new lib.CachedBmp_2498();
+	this.instance_521.setTransform(60,270,0.5,0.5);
+	this.instance_522 = new lib.CachedBmp_2497();
+	this.instance_522.setTransform(60,250,0.5,0.5);
+	this.instance_523 = new lib.CachedBmp_2496();
+	this.instance_523.setTransform(60,230,0.5,0.5);
+	this.instance_524 = new lib.CachedBmp_2495();
+	this.instance_524.setTransform(60,210,0.5,0.5);
+	this.instance_525 = new lib.CachedBmp_2494();
+	this.instance_525.setTransform(60,190,0.5,0.5);
+	this.instance_526 = new lib.CachedBmp_2493();
+	this.instance_526.setTransform(60,170,0.5,0.5);
+	this.instance_527 = new lib.CachedBmp_2527();
+	this.instance_527.setTransform(307.95,335.05,0.5,0.5);
+	this.instance_528 = new lib.CachedBmp_2526();
+	this.instance_528.setTransform(112,57.05,0.5,0.5);
+	this.instance_529 = new lib.CachedBmp_2525();
+	this.instance_529.setTransform(36,86.05,0.5,0.5);
+	this.instance_530 = new lib.CachedBmp_2524();
+	this.instance_530.setTransform(238.95,311.2,0.5,0.5);
+	this.instance_531 = new lib.CachedBmp_2523();
+	this.instance_531.setTransform(248.95,227.05,0.5,0.5);
+	this.instance_532 = new lib.CachedBmp_2522();
+	this.instance_532.setTransform(248.95,166.2,0.5,0.5);
+	this.instance_533 = new lib.CachedBmp_2521();
+	this.instance_533.setTransform(316,220.55,0.5,0.5);
+	this.instance_534 = new lib.CachedBmp_2520();
+	this.instance_534.setTransform(315.95,161.05,0.5,0.5);
+	this.instance_535 = new lib.CachedBmp_2519();
+	this.instance_535.setTransform(60,330,0.5,0.5);
+	this.instance_536 = new lib.CachedBmp_2518();
+	this.instance_536.setTransform(60,310,0.5,0.5);
+	this.instance_537 = new lib.CachedBmp_2517();
+	this.instance_537.setTransform(60,290,0.5,0.5);
+	this.instance_538 = new lib.CachedBmp_2516();
+	this.instance_538.setTransform(60,270,0.5,0.5);
+	this.instance_539 = new lib.CachedBmp_2515();
+	this.instance_539.setTransform(60,250,0.5,0.5);
+	this.instance_540 = new lib.CachedBmp_2514();
+	this.instance_540.setTransform(60,230,0.5,0.5);
+	this.instance_541 = new lib.CachedBmp_2513();
+	this.instance_541.setTransform(60,210,0.5,0.5);
+	this.instance_542 = new lib.CachedBmp_2512();
+	this.instance_542.setTransform(60,190,0.5,0.5);
+	this.instance_543 = new lib.CachedBmp_2511();
+	this.instance_543.setTransform(60,170,0.5,0.5);
+	this.instance_544 = new lib.CachedBmp_2545();
+	this.instance_544.setTransform(307.95,335.05,0.5,0.5);
+	this.instance_545 = new lib.CachedBmp_2544();
+	this.instance_545.setTransform(112,57.05,0.5,0.5);
+	this.instance_546 = new lib.CachedBmp_2543();
+	this.instance_546.setTransform(36,86.05,0.5,0.5);
+	this.instance_547 = new lib.CachedBmp_2542();
+	this.instance_547.setTransform(238.95,311.2,0.5,0.5);
+	this.instance_548 = new lib.CachedBmp_2541();
+	this.instance_548.setTransform(248.95,227.05,0.5,0.5);
+	this.instance_549 = new lib.CachedBmp_2540();
+	this.instance_549.setTransform(248.95,166.2,0.5,0.5);
+	this.instance_550 = new lib.CachedBmp_2539();
+	this.instance_550.setTransform(316,220.55,0.5,0.5);
+	this.instance_551 = new lib.CachedBmp_2538();
+	this.instance_551.setTransform(315.95,161.05,0.5,0.5);
+	this.instance_552 = new lib.CachedBmp_2537();
+	this.instance_552.setTransform(60,330,0.5,0.5);
+	this.instance_553 = new lib.CachedBmp_2536();
+	this.instance_553.setTransform(60,310,0.5,0.5);
+	this.instance_554 = new lib.CachedBmp_2535();
+	this.instance_554.setTransform(60,290,0.5,0.5);
+	this.instance_555 = new lib.CachedBmp_2534();
+	this.instance_555.setTransform(60,270,0.5,0.5);
+	this.instance_556 = new lib.CachedBmp_2533();
+	this.instance_556.setTransform(60,250,0.5,0.5);
+	this.instance_557 = new lib.CachedBmp_2532();
+	this.instance_557.setTransform(60,230,0.5,0.5);
+	this.instance_558 = new lib.CachedBmp_2531();
+	this.instance_558.setTransform(60,210,0.5,0.5);
+	this.instance_559 = new lib.CachedBmp_2530();
+	this.instance_559.setTransform(60,190,0.5,0.5);
+	this.instance_560 = new lib.CachedBmp_2529();
+	this.instance_560.setTransform(60,170,0.5,0.5);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_132}]}).to({state:[{t:this.instance_149},{t:this.instance_148},{t:this.instance_147},{t:this.instance_146},{t:this.instance_145},{t:this.instance_144},{t:this.instance_143},{t:this.instance_142},{t:this.instance_141},{t:this.instance_140},{t:this.instance_139},{t:this.instance_138},{t:this.instance_137},{t:this.instance_136},{t:this.instance_135},{t:this.instance_134},{t:this.instance_133}]},1).to({state:[{t:this.instance_166},{t:this.instance_165},{t:this.instance_164},{t:this.instance_163},{t:this.instance_162},{t:this.instance_161},{t:this.instance_160},{t:this.instance_159},{t:this.instance_158},{t:this.instance_157},{t:this.instance_156},{t:this.instance_155},{t:this.instance_154},{t:this.instance_153},{t:this.instance_152},{t:this.instance_151},{t:this.instance_150}]},44).to({state:[{t:this.instance_166},{t:this.instance_182},{t:this.instance_181},{t:this.instance_180},{t:this.instance_179},{t:this.instance_178},{t:this.instance_177},{t:this.instance_176},{t:this.instance_175},{t:this.instance_174},{t:this.instance_173},{t:this.instance_172},{t:this.instance_171},{t:this.instance_170},{t:this.instance_169},{t:this.instance_168},{t:this.instance_167}]},23).to({state:[{t:this.instance_166},{t:this.instance_198},{t:this.instance_197},{t:this.instance_196},{t:this.instance_195},{t:this.instance_194},{t:this.instance_193},{t:this.instance_192},{t:this.instance_191},{t:this.instance_190},{t:this.instance_189},{t:this.instance_188},{t:this.instance_187},{t:this.instance_186},{t:this.instance_185},{t:this.instance_184},{t:this.instance_183}]},107).to({state:[{t:this.instance_166},{t:this.instance_214},{t:this.instance_213},{t:this.instance_212},{t:this.instance_211},{t:this.instance_210},{t:this.instance_209},{t:this.instance_208},{t:this.instance_207},{t:this.instance_206},{t:this.instance_205},{t:this.instance_204},{t:this.instance_203},{t:this.instance_202},{t:this.instance_201},{t:this.instance_200},{t:this.instance_199}]},22).to({state:[{t:this.instance_166},{t:this.instance_230},{t:this.instance_229},{t:this.instance_228},{t:this.instance_227},{t:this.instance_226},{t:this.instance_225},{t:this.instance_224},{t:this.instance_223},{t:this.instance_222},{t:this.instance_221},{t:this.instance_220},{t:this.instance_219},{t:this.instance_218},{t:this.instance_217},{t:this.instance_216},{t:this.instance_215}]},40).to({state:[{t:this.instance_166},{t:this.instance_246},{t:this.instance_245},{t:this.instance_244},{t:this.instance_243},{t:this.instance_242},{t:this.instance_241},{t:this.instance_240},{t:this.instance_239},{t:this.instance_238},{t:this.instance_237},{t:this.instance_236},{t:this.instance_235},{t:this.instance_234},{t:this.instance_233},{t:this.instance_232},{t:this.instance_231}]},20).to({state:[{t:this.instance_166},{t:this.instance_262},{t:this.instance_261},{t:this.instance_260},{t:this.instance_259},{t:this.instance_258},{t:this.instance_257},{t:this.instance_256},{t:this.instance_255},{t:this.instance_254},{t:this.instance_253},{t:this.instance_252},{t:this.instance_251},{t:this.instance_250},{t:this.instance_249},{t:this.instance_248},{t:this.instance_247}]},187).to({state:[{t:this.instance_166},{t:this.instance_278},{t:this.instance_277},{t:this.instance_276},{t:this.instance_275},{t:this.instance_274},{t:this.instance_273},{t:this.instance_272},{t:this.instance_271},{t:this.instance_270},{t:this.instance_269},{t:this.instance_268},{t:this.instance_267},{t:this.instance_266},{t:this.instance_265},{t:this.instance_264},{t:this.instance_263}]},21).to({state:[{t:this.instance_166},{t:this.instance_294},{t:this.instance_293},{t:this.instance_292},{t:this.instance_291},{t:this.instance_290},{t:this.instance_289},{t:this.instance_288},{t:this.instance_287},{t:this.instance_286},{t:this.instance_285},{t:this.instance_284},{t:this.instance_283},{t:this.instance_282},{t:this.instance_281},{t:this.instance_280},{t:this.instance_279}]},58).to({state:[{t:this.instance_166},{t:this.instance_310},{t:this.instance_309},{t:this.instance_308},{t:this.instance_307},{t:this.instance_306},{t:this.instance_305},{t:this.instance_304},{t:this.instance_303},{t:this.instance_302},{t:this.instance_301},{t:this.instance_300},{t:this.instance_299},{t:this.instance_298},{t:this.instance_297},{t:this.instance_296},{t:this.instance_295}]},10).to({state:[{t:this.instance_166},{t:this.instance_326},{t:this.instance_325},{t:this.instance_324},{t:this.instance_323},{t:this.instance_322},{t:this.instance_321},{t:this.instance_320},{t:this.instance_319},{t:this.instance_318},{t:this.instance_317},{t:this.instance_316},{t:this.instance_315},{t:this.instance_314},{t:this.instance_313},{t:this.instance_312},{t:this.instance_311}]},30).to({state:[{t:this.instance_166},{t:this.instance_342},{t:this.instance_341},{t:this.instance_340},{t:this.instance_339},{t:this.instance_338},{t:this.instance_337},{t:this.instance_336},{t:this.instance_335},{t:this.instance_334},{t:this.instance_333},{t:this.instance_332},{t:this.instance_331},{t:this.instance_330},{t:this.instance_329},{t:this.instance_328},{t:this.instance_327}]},20).to({state:[{t:this.instance_166},{t:this.instance_358},{t:this.instance_357},{t:this.instance_356},{t:this.instance_355},{t:this.instance_354},{t:this.instance_353},{t:this.instance_352},{t:this.instance_351},{t:this.instance_350},{t:this.instance_349},{t:this.instance_348},{t:this.instance_347},{t:this.instance_346},{t:this.instance_345},{t:this.instance_344},{t:this.instance_343}]},140).to({state:[{t:this.instance_166},{t:this.instance_374},{t:this.instance_373},{t:this.instance_372},{t:this.instance_371},{t:this.instance_370},{t:this.instance_369},{t:this.instance_368},{t:this.instance_367},{t:this.instance_366},{t:this.instance_365},{t:this.instance_364},{t:this.instance_363},{t:this.instance_362},{t:this.instance_361},{t:this.instance_360},{t:this.instance_359}]},21).to({state:[{t:this.instance_166},{t:this.instance_390},{t:this.instance_389},{t:this.instance_388},{t:this.instance_387},{t:this.instance_386},{t:this.instance_385},{t:this.instance_384},{t:this.instance_383},{t:this.instance_382},{t:this.instance_381},{t:this.instance_380},{t:this.instance_379},{t:this.instance_378},{t:this.instance_377},{t:this.instance_376},{t:this.instance_375}]},60).to({state:[{t:this.instance_166},{t:this.instance_407},{t:this.instance_406},{t:this.instance_405},{t:this.instance_404},{t:this.instance_403},{t:this.instance_402},{t:this.instance_401},{t:this.instance_400},{t:this.instance_399},{t:this.instance_398},{t:this.instance_397},{t:this.instance_396},{t:this.instance_395},{t:this.instance_394},{t:this.instance_393},{t:this.instance_392},{t:this.instance_391}]},8).to({state:[{t:this.instance_166},{t:this.instance_424},{t:this.instance_423},{t:this.instance_422},{t:this.instance_421},{t:this.instance_420},{t:this.instance_419},{t:this.instance_418},{t:this.instance_417},{t:this.instance_416},{t:this.instance_415},{t:this.instance_414},{t:this.instance_413},{t:this.instance_412},{t:this.instance_411},{t:this.instance_410},{t:this.instance_409},{t:this.instance_408}]},22).to({state:[{t:this.instance_166},{t:this.instance_441},{t:this.instance_440},{t:this.instance_439},{t:this.instance_438},{t:this.instance_437},{t:this.instance_436},{t:this.instance_435},{t:this.instance_434},{t:this.instance_433},{t:this.instance_432},{t:this.instance_431},{t:this.instance_430},{t:this.instance_429},{t:this.instance_428},{t:this.instance_427},{t:this.instance_426},{t:this.instance_425}]},20).to({state:[{t:this.instance_166},{t:this.instance_458},{t:this.instance_457},{t:this.instance_456},{t:this.instance_455},{t:this.instance_454},{t:this.instance_453},{t:this.instance_452},{t:this.instance_451},{t:this.instance_450},{t:this.instance_449},{t:this.instance_448},{t:this.instance_447},{t:this.instance_446},{t:this.instance_445},{t:this.instance_444},{t:this.instance_443},{t:this.instance_442}]},118).to({state:[{t:this.instance_166},{t:this.instance_475},{t:this.instance_474},{t:this.instance_473},{t:this.instance_472},{t:this.instance_471},{t:this.instance_470},{t:this.instance_469},{t:this.instance_468},{t:this.instance_467},{t:this.instance_466},{t:this.instance_465},{t:this.instance_464},{t:this.instance_463},{t:this.instance_462},{t:this.instance_461},{t:this.instance_460},{t:this.instance_459}]},8).to({state:[{t:this.instance_166},{t:this.instance_492},{t:this.instance_491},{t:this.instance_490},{t:this.instance_489},{t:this.instance_488},{t:this.instance_487},{t:this.instance_486},{t:this.instance_485},{t:this.instance_484},{t:this.instance_483},{t:this.instance_482},{t:this.instance_481},{t:this.instance_480},{t:this.instance_479},{t:this.instance_478},{t:this.instance_477},{t:this.instance_476}]},20).to({state:[{t:this.instance_166},{t:this.instance_509},{t:this.instance_508},{t:this.instance_507},{t:this.instance_506},{t:this.instance_505},{t:this.instance_504},{t:this.instance_503},{t:this.instance_502},{t:this.instance_501},{t:this.instance_500},{t:this.instance_499},{t:this.instance_498},{t:this.instance_497},{t:this.instance_496},{t:this.instance_495},{t:this.instance_494},{t:this.instance_493}]},19).to({state:[{t:this.instance_166},{t:this.instance_526},{t:this.instance_525},{t:this.instance_524},{t:this.instance_523},{t:this.instance_522},{t:this.instance_521},{t:this.instance_520},{t:this.instance_519},{t:this.instance_518},{t:this.instance_517},{t:this.instance_516},{t:this.instance_515},{t:this.instance_514},{t:this.instance_513},{t:this.instance_512},{t:this.instance_511},{t:this.instance_510}]},50).to({state:[{t:this.instance_166},{t:this.instance_543},{t:this.instance_542},{t:this.instance_541},{t:this.instance_540},{t:this.instance_539},{t:this.instance_538},{t:this.instance_537},{t:this.instance_536},{t:this.instance_535},{t:this.instance_534},{t:this.instance_533},{t:this.instance_532},{t:this.instance_531},{t:this.instance_530},{t:this.instance_529},{t:this.instance_528},{t:this.instance_527}]},20).to({state:[{t:this.instance_166},{t:this.instance_560},{t:this.instance_559},{t:this.instance_558},{t:this.instance_557},{t:this.instance_556},{t:this.instance_555},{t:this.instance_554},{t:this.instance_553},{t:this.instance_552},{t:this.instance_551},{t:this.instance_550},{t:this.instance_549},{t:this.instance_548},{t:this.instance_547},{t:this.instance_546},{t:this.instance_545},{t:this.instance_544}]},14).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new lib.AnMovieClip();
+p.nominalBounds = new cjs.Rectangle(279,202,271,186.10000000000002);
+// library properties:
+lib.properties = {
+	id: 'BCA6A47BE0D87B47890AE36E7701DBEF',
+	width: 550,
+	height: 400,
+	fps: 12,
+	color: "#FFFFFF",
+	opacity: 1.00,
+	manifest: [
+		{src:"images/子集划分_atlas_1.png", id:"子集划分_atlas_1"},
+		{src:"images/子集划分_atlas_2.png", id:"子集划分_atlas_2"},
+		{src:"images/子集划分_atlas_3.png", id:"子集划分_atlas_3"},
+		{src:"images/子集划分_atlas_4.png", id:"子集划分_atlas_4"}
+	],
+	preloads: []
+};
+// bootstrap callback support:
+(lib.Stage = function(canvas) {
+	createjs.Stage.call(this, canvas);
+}).prototype = p = new createjs.Stage();
+p.setAutoPlay = function(autoPlay) {
+	this.tickEnabled = autoPlay;
+}
+p.play = function() { this.tickEnabled = true; this.getChildAt(0).gotoAndPlay(this.getTimelinePosition()) }
+p.stop = function(ms) { if(ms) this.seek(ms); this.tickEnabled = false; }
+p.seek = function(ms) { this.tickEnabled = true; this.getChildAt(0).gotoAndStop(lib.properties.fps * ms / 1000); }
+p.getDuration = function() { return this.getChildAt(0).totalFrames / lib.properties.fps * 1000; }
+p.getTimelinePosition = function() { return this.getChildAt(0).currentFrame / lib.properties.fps * 1000; }
+an.bootcompsLoaded = an.bootcompsLoaded || [];
+if(!an.bootstrapListeners) {
+	an.bootstrapListeners=[];
+}
+an.bootstrapCallback=function(fnCallback) {
+	an.bootstrapListeners.push(fnCallback);
+	if(an.bootcompsLoaded.length > 0) {
+		for(var i=0; i<an.bootcompsLoaded.length; ++i) {
+			fnCallback(an.bootcompsLoaded[i]);
+		}
+	}
+};
+an.compositions = an.compositions || {};
+an.compositions['BCA6A47BE0D87B47890AE36E7701DBEF'] = {
+	getStage: function() { return exportRoot.stage; },
+	getLibrary: function() { return lib; },
+	getSpriteSheet: function() { return ss; },
+	getImages: function() { return img; }
+};
+an.compositionLoaded = function(id) {
+	an.bootcompsLoaded.push(id);
+	for(var j=0; j<an.bootstrapListeners.length; j++) {
+		an.bootstrapListeners[j](id);
+	}
+}
+an.getComposition = function(id) {
+	return an.compositions[id];
+}
+an.makeResponsive = function(isResp, respDim, isScale, scaleType, domContainers) {		
+	var lastW, lastH, lastS=1;		
+	window.addEventListener('resize', resizeCanvas);		
+	resizeCanvas();		
+	function resizeCanvas() {			
+		var w = lib.properties.width, h = lib.properties.height;			
+		var iw = window.innerWidth, ih=window.innerHeight;			
+		var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;			
+		if(isResp) {                
+			if((respDim=='width'&&lastW==iw) || (respDim=='height'&&lastH==ih)) {                    
+				sRatio = lastS;                
+			}				
+			else if(!isScale) {					
+				if(iw<w || ih<h)						
+					sRatio = Math.min(xRatio, yRatio);				
+			}				
+			else if(scaleType==1) {					
+				sRatio = Math.min(xRatio, yRatio);				
+			}				
+			else if(scaleType==2) {					
+				sRatio = Math.max(xRatio, yRatio);				
+			}			
+		}
+		domContainers[0].width = w * pRatio * sRatio;			
+		domContainers[0].height = h * pRatio * sRatio;
+		domContainers.forEach(function(container) {				
+			container.style.width = w * sRatio + 'px';				
+			container.style.height = h * sRatio + 'px';			
+		});
+		stage.scaleX = pRatio*sRatio;			
+		stage.scaleY = pRatio*sRatio;
+		lastW = iw; lastH = ih; lastS = sRatio;            
+		stage.tickOnUpdate = false;            
+		stage.update();            
+		stage.tickOnUpdate = true;		
+	}
+}
+an.handleSoundStreamOnTick = function(event) {
+	if(!event.paused){
+		var stageChild = stage.getChildAt(0);
+		if(!stageChild.paused || stageChild.ignorePause){
+			stageChild.syncStreamSounds();
+		}
+	}
+}
+an.handleFilterCache = function(event) {
+	if(!event.paused){
+		var target = event.target;
+		if(target){
+			if(target.filterCacheList){
+				for(var index = 0; index < target.filterCacheList.length ; index++){
+					var cacheInst = target.filterCacheList[index];
+					if((cacheInst.startFrame <= target.currentFrame) && (target.currentFrame <= cacheInst.endFrame)){
+						cacheInst.instance.cache(cacheInst.x, cacheInst.y, cacheInst.w, cacheInst.h);
+					}
+				}
+			}
+		}
+	}
+}
+})(createjs = createjs||{}, AdobeAn = AdobeAn||{});
+var createjs, AdobeAn;
+</script>
+<script>
+var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+function init() {
+	canvas = document.getElementById("canvas");
+	anim_container = document.getElementById("animation_container");
+	dom_overlay_container = document.getElementById("dom_overlay_container");
+	var comp=AdobeAn.getComposition("BCA6A47BE0D87B47890AE36E7701DBEF");
+	var lib=comp.getLibrary();
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+	var lib=comp.getLibrary();
+	loader.loadManifest(lib.properties.manifest);
+}
+function handleFileLoad(evt, comp) {
+	var images=comp.getImages();	
+	if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
+}
+function handleComplete(evt,comp) {
+	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+	var lib=comp.getLibrary();
+	var ss=comp.getSpriteSheet();
+	var queue = evt.target;
+	var ssMetadata = lib.ssMetadata;
+	for(i=0; i<ssMetadata.length; i++) {
+		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+	}
+	var preloaderDiv = document.getElementById("_preload_div_");
+	preloaderDiv.style.display = 'none';
+	canvas.style.display = 'block';
+	exportRoot = new lib.子集划分();
+	stage = new lib.Stage(canvas);
+	stage.enableMouseOver();	
+	//Registers the "tick" event listener.
+	fnStartAnimation = function() {
+		stage.addChild(exportRoot);
+		createjs.Ticker.framerate = lib.properties.fps;
+		createjs.Ticker.addEventListener("tick", stage);
+	}	    
+	//Code to support hidpi screens and responsive scaling.
+	AdobeAn.makeResponsive(true,'both',true,1,[canvas,preloaderDiv,anim_container,dom_overlay_container]);	
+	AdobeAn.compositionLoaded(lib.properties.id);
+	fnStartAnimation();
+}
+</script>
+<!-- write your code here -->
+</head>
+<body onload="init();" style="margin:0px;">
+	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:550px; height:400px">
+		<canvas id="canvas" width="550" height="400" style="position: absolute; display: none; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:550px; height:400px; position: absolute; left: 0px; top: 0px; display: none;">
+		</div>
+	</div>
+    <div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:400px; width: 550px; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/></div>
+</body>
+</html>
